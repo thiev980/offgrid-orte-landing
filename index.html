@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remote Spots – Find Places Nobody Knows</title>
+  <meta name="description" content="Discover the most remote locations far from any road. Perfect for wilderness camping, photography, and off-grid adventures.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Remote Spots – Find Places Nobody Knows">
+  <meta property="og:description" content="Discover the most remote locations far from any road. Perfect for wilderness camping, photography, and off-grid adventures.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remote-spots.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              900: '#1a2e1a',
+              800: '#243524',
+              700: '#2d4a2d',
+              600: '#3d5c3d',
+            },
+            earth: {
+              900: '#1c1917',
+              800: '#292524',
+              700: '#44403c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    
+    .gradient-hero {
+      background: linear-gradient(135deg, #1a2e1a 0%, #1c1917 50%, #292524 100%);
+    }
+    
+    .gradient-card {
+      background: linear-gradient(180deg, rgba(45, 74, 45, 0.3) 0%, rgba(28, 25, 23, 0.8) 100%);
+    }
+    
+    .glow {
+      box-shadow: 0 0 60px rgba(74, 222, 128, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-earth-900 text-gray-100">
+  
+  <!-- Hero Section -->
+  <section class="gradient-hero min-h-screen flex flex-col">
+    <!-- Nav -->
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🏔️</span>
+        <span class="font-semibold text-lg">Remote Spots</span>
+      </div>
+      <a href="https://app.remote-spots.com" class="text-sm text-gray-400 hover:text-white transition-colors">
+        Open App →
+      </a>
+    </nav>
+    
+    <!-- Hero Content -->
+    <div class="flex-1 container mx-auto px-6 flex flex-col justify-center max-w-4xl">
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Find places<br>
+          <span class="text-green-400">nobody knows</span>
+        </h1>
+        
+        <p class="text-xl text-gray-400 max-w-2xl">
+          Trails are crowded. Parking lots full. But there are still places far from any road – 
+          where you're truly alone. We'll show you exactly where.
+        </p>
+        
+        <!-- USP Points -->
+        <div class="flex flex-wrap gap-6 text-sm text-gray-300 pt-2">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Results in 30 seconds</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Precise to the meter</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Export to GPS</span>
+          </div>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <a href="https://app.remote-spots.com" 
+             class="inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-lg transition-colors">
+            Find Your First Spot
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="#how-it-works" 
+             class="inline-flex items-center justify-center px-8 py-4 border border-gray-600 hover:border-gray-500 text-gray-300 font-medium rounded-lg transition-colors">
+            How it works
+          </a>
+        </div>
+        
+        <p class="text-sm text-gray-500 pt-2">
+          Free to try · No signup required
+        </p>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="pb-8 flex justify-center">
+      <div class="animate-bounce text-gray-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- App Screenshot -->
+  <section class="py-16 bg-earth-800">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+        <img src="app-screenshot.png" alt="Remote Spots Finder App - Finding remote locations in the Scottish Highlands" class="w-full">
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- How it Works -->
+  <section id="how-it-works" class="py-24 bg-earth-800">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <h2 class="text-3xl font-bold text-center mb-16">How it works</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 mx-auto bg-forest-700 rounded-2xl flex items-center justify-center text-2xl">
+            📍
+          </div>
+          <h3 class="text-xl font-semibold">1. Pick a location</h3>
+          <p class="text-gray-400">
+            Click anywhere on the map to set your search center.
+          </p>
+        </div>
+        
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 mx-auto bg-forest-700 rounded-2xl flex items-center justify-center text-2xl">
+            ⚙️
+          </div>
+          <h3 class="text-xl font-semibold">2. Set your filters</h3>
+          <p class="text-gray-400">
+            Choose radius, terrain type, forest cover, water proximity.
+          </p>
+        </div>
+        
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 mx-auto bg-forest-700 rounded-2xl flex items-center justify-center text-2xl">
+            🗺️
+          </div>
+          <h3 class="text-xl font-semibold">3. Get coordinates</h3>
+          <p class="text-gray-400">
+            Export to GPX and navigate directly to your remote spot.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Use Cases -->
+  <section class="py-24 bg-earth-900">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <h2 class="text-3xl font-bold text-center mb-6">Built for</h2>
+      <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        Whether you're planning a wilderness retreat, scouting locations, or preparing for the unexpected.
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="gradient-card border border-forest-700/50 rounded-2xl p-8 space-y-4">
+          <div class="text-4xl">🏕️</div>
+          <h3 class="text-xl font-semibold">Wilderness Campers</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Find legal bivouac spots far from trails. Filter for forest cover and nearby water sources.
+          </p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="gradient-card border border-forest-700/50 rounded-2xl p-8 space-y-4">
+          <div class="text-4xl">📸</div>
+          <h3 class="text-xl font-semibold">Photographers</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            No people. No cars. No powerlines. Just untouched landscapes for your next shot.
+          </p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="gradient-card border border-forest-700/50 rounded-2xl p-8 space-y-4">
+          <div class="text-4xl">🎒</div>
+          <h3 class="text-xl font-semibold">Off-Grid Planners</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Systematically identify fallback locations. With forest cover, water access, and terrain filters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Features / Pricing -->
+  <section class="py-24 bg-earth-800">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-6">Simple pricing</h2>
+      <p class="text-gray-400 text-center mb-16">
+        Start for free. Upgrade when you need more.
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Free -->
+        <div class="bg-earth-900 border border-gray-800 rounded-2xl p-8">
+          <div class="text-sm font-medium text-gray-500 uppercase tracking-wide">Free</div>
+          <div class="mt-2 text-4xl font-bold">$0</div>
+          <div class="text-gray-500 text-sm">Forever</div>
+          
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300">Up to 5 km radius</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300">10 spots per search</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300">Elevation filter</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300">CSV export</span>
+            </li>
+          </ul>
+          
+          <a href="https://app.remote-spots.com" 
+             class="mt-8 block w-full py-3 text-center border border-gray-600 hover:border-gray-500 rounded-lg font-medium transition-colors">
+            Get started
+          </a>
+        </div>
+        
+        <!-- Pro -->
+        <div class="bg-forest-900 border border-green-700/50 rounded-2xl p-8 glow relative">
+          <div class="absolute -top-3 left-8 px-3 py-1 bg-green-600 text-xs font-semibold uppercase rounded-full">
+            Popular
+          </div>
+          
+          <div class="text-sm font-medium text-green-400 uppercase tracking-wide">Pro</div>
+          <div class="mt-2">
+            <span class="text-4xl font-bold">$5</span>
+            <span class="text-gray-400 text-sm ml-1">one-time</span>
+          </div>
+          <div class="text-gray-500 text-sm">Lifetime access</div>
+          
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300">Everything in Free</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300"><strong>Up to 50 km</strong> radius</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300"><strong>50 spots</strong> per search</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300"><strong>Including footpaths</strong> mode</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300"><strong>Forest cover</strong> filter</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300"><strong>Near water</strong> filter</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-300"><strong>GPX &amp; GeoJSON</strong> export</span>
+            </li>
+          </ul>
+          
+          <a href="https://remote-spots.lemonsqueezy.com/checkout/buy/6e69113b-2f9a-4b71-8a54-17baac51f9bb" 
+             class="mt-8 block w-full py-3 text-center bg-green-600 hover:bg-green-500 rounded-lg font-semibold transition-colors">
+            Get Pro Access
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Final CTA -->
+  <section class="py-24 bg-earth-900">
+    <div class="container mx-auto px-6 max-w-2xl text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Find your first remote spot
+      </h2>
+      <p class="text-gray-400 text-lg mb-8">
+        No signup. No credit card. Just click and explore.
+      </p>
+      <a href="https://app.remote-spots.com" 
+         class="inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-lg transition-colors text-lg">
+        Open the App
+        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  
+  <!-- Footer -->
+  <footer class="py-12 bg-earth-800 border-t border-gray-800">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🏔️</span>
+          <span class="font-medium">Remote Spots</span>
+        </div>
+        
+        <div class="flex gap-8 text-sm text-gray-500">
+          <a href="mailto:hello@remote-spots.com" class="hover:text-gray-300 transition-colors">Contact</a>
+          <a href="#" class="hover:text-gray-300 transition-colors">Privacy</a>
+          <a href="#" class="hover:text-gray-300 transition-colors">Terms</a>
+        </div>
+        
+        <div class="text-sm text-gray-600">
+          © 2025 Remote Spots
+        </div>
+      </div>
+    </div>
+  </footer>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
