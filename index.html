@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary SEO -->
-  <title>Remote Spots – Find the Most Remote Places Far From Any Road</title>
-  <meta name="description" content="Discover the most remote locations anywhere on Earth. Our tool calculates the furthest points from roads using OpenStreetMap data. Perfect for wild camping, bivouac spots, photography, and off-grid adventures. Free to use.">
-  <meta name="keywords" content="remote spots, wild camping, find remote places, bivouac spots, off-grid locations, wilderness camping, furthest from road, remote hiking, wild camping Europe, dispersed camping, GPS coordinates">
+  <title>OffGrid-Orte – Finde die abgelegensten Orte weit weg von jeder Strasse</title>
+  <meta name="description" content="Entdecke die abgelegensten Orte in den Alpen und ganz Europa. Unser Tool berechnet die Punkte mit maximaler Entfernung zu Strassen – perfekt für Wildcampen, Biwakplätze, Fotografie und Off-Grid-Abenteuer. Kostenlos nutzbar.">
+  <meta name="keywords" content="abgelegene orte, wildcampen, biwakplätze finden, off-grid, wildnis camping, entfernung strasse, wildcampen schweiz, wildcampen österreich, wildcampen alpen, GPS koordinaten, biwak">
   
   <!-- Canonical -->
-  <link rel="canonical" href="https://remote-spots.com/">
+  <link rel="canonical" href="https://offgrid-orte.de/">
   
   <!-- Robots -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://remote-spots.com/">
-  <meta property="og:title" content="Remote Spots – Find Places Nobody Knows">
-  <meta property="og:description" content="Find the most remote locations far from any road. Calculate exact GPS coordinates for wild camping, photography, and off-grid adventures.">
-  <meta property="og:image" content="https://remote-spots.com/images/og-image.png">
+  <meta property="og:url" content="https://offgrid-orte.de/">
+  <meta property="og:title" content="OffGrid-Orte – Finde Orte, die niemand kennt">
+  <meta property="og:description" content="Finde die abgelegensten Orte weit weg von jeder Strasse. GPS-Koordinaten für Wildcampen, Fotografie und Off-Grid-Abenteuer.">
+  <meta property="og:image" content="https://offgrid-orte.de/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Remote Spots">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="OffGrid-Orte">
+  <meta property="og:locale" content="de_DE">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://remote-spots.com/">
-  <meta name="twitter:title" content="Remote Spots – Find Places Nobody Knows">
-  <meta name="twitter:description" content="Find the most remote locations far from any road. GPS coordinates for wild camping, photography, and off-grid adventures.">
-  <meta name="twitter:image" content="https://remote-spots.com/og-image.png">
+  <meta name="twitter:url" content="https://offgrid-orte.de/">
+  <meta name="twitter:title" content="OffGrid-Orte – Finde Orte, die niemand kennt">
+  <meta name="twitter:description" content="Finde die abgelegensten Orte weit weg von jeder Strasse. GPS-Koordinaten für Wildcampen, Fotografie und Off-Grid-Abenteuer.">
+  <meta name="twitter:image" content="https://offgrid-orte.de/images/og-image.png">
   
   <!-- Geo Tags -->
-  <meta name="geo.region" content="CH">
-  <meta name="geo.placename" content="Zurich">
+  <meta name="geo.region" content="DE">
+  <meta name="geo.placename" content="Deutschland">
   
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
@@ -161,7 +161,7 @@
       line-height: 1.15;
       color: var(--text-cream);
       margin-bottom: 1.5rem;
-      max-width: 600px;
+      max-width: 650px;
     }
     .hero-subtitle {
       font-size: 1.05rem;
@@ -583,6 +583,46 @@
       background: var(--border);
     }
 
+    /* Regions grid */
+    .regions-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .region-card {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: border-color 0.3s, background 0.3s, transform 0.15s;
+    }
+    .region-card:hover {
+      border-color: var(--moss);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+    .region-flag {
+      font-size: 1.5rem;
+    }
+    .region-name {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-cream);
+    }
+    .region-arrow {
+      color: var(--text-dim);
+      transition: color 0.3s, transform 0.3s;
+    }
+    .region-card:hover .region-arrow {
+      color: var(--moss);
+      transform: translateX(3px);
+    }
+
     /* Responsive */
     @media (max-width: 640px) {
       .container { padding: 0 1.25rem; }
@@ -599,38 +639,38 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Remote Spots",
-    "url": "https://remote-spots.com",
+    "name": "OffGrid-Orte",
+    "url": "https://offgrid-orte.de",
     "applicationCategory": "TravelApplication",
     "operatingSystem": "Web",
-    "description": "Find the most remote locations far from any road. Calculate GPS coordinates for wild camping, photography, and off-grid adventures using OpenStreetMap data.",
+    "description": "Finde die abgelegensten Orte weit weg von jeder Strasse. GPS-Koordinaten für Wildcampen, Fotografie und Off-Grid-Abenteuer mit OpenStreetMap-Daten.",
     "offers": [
       {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD",
-        "description": "Free plan with 5km radius and 10 spots per search"
+        "priceCurrency": "EUR",
+        "description": "Kostenlos mit 5km Radius und 10 Spots pro Suche"
       },
       {
         "@type": "Offer",
         "price": "5",
-        "priceCurrency": "USD",
-        "description": "Pro plan with 50km radius, forest and water filters, GPX export"
+        "priceCurrency": "EUR",
+        "description": "Pro mit 50km Radius, Wald- und Wasserfilter, GPX-Export"
       }
     ],
-    "screenshot": "https://remote-spots.com/app-screenshot.png",
+    "screenshot": "https://offgrid-orte.de/images/app-screenshot.png",
     "featureList": [
-      "Find locations furthest from roads",
-      "Forest cover filter",
-      "Near water source filter",
-      "GPX, GeoJSON, CSV export",
-      "Elevation filter",
-      "Global coverage via OpenStreetMap"
+      "Punkte mit maximaler Entfernung zu Strassen finden",
+      "Waldbedeckungsfilter",
+      "Gewässernähe-Filter",
+      "GPX, GeoJSON, CSV Export",
+      "Höhenfilter",
+      "Europaweite Abdeckung via OpenStreetMap"
     ],
     "author": {
       "@type": "Organization",
-      "name": "Remote Spots",
-      "url": "https://remote-spots.com"
+      "name": "OffGrid-Orte",
+      "url": "https://offgrid-orte.de"
     }
   }
   </script>
@@ -643,42 +683,42 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How does Remote Spots find remote locations?",
+        "name": "Wie findet OffGrid-Orte abgelegene Orte?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Remote Spots uses OpenStreetMap road data and a distance transform algorithm to calculate the exact points furthest from any road within your chosen area. Results are precise to the meter and returned as GPS coordinates you can export to your device."
+          "text": "OffGrid-Orte nutzt OpenStreetMap-Strassendaten und einen Distanztransformations-Algorithmus, um die exakten Punkte mit maximaler Entfernung zu Strassen in deinem gewählten Gebiet zu berechnen. Die Ergebnisse sind auf den Meter genau und werden als GPS-Koordinaten geliefert."
         }
       },
       {
         "@type": "Question",
-        "name": "Is Remote Spots free to use?",
+        "name": "Ist OffGrid-Orte kostenlos?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Remote Spots offers a free plan with up to 5km search radius, 10 spots per search, elevation filter, and CSV export. The Pro plan ($5 one-time) unlocks 50km radius, 50 spots, forest cover filter, water proximity filter, and GPX/GeoJSON export."
+          "text": "Ja, OffGrid-Orte bietet einen kostenlosen Plan mit bis zu 5km Suchradius, 10 Spots pro Suche, Höhenfilter und CSV-Export. Der Pro-Plan (einmalig 5€) schaltet 50km Radius, 50 Spots, Wald- und Wasserfilter sowie GPX/GeoJSON-Export frei."
         }
       },
       {
         "@type": "Question",
-        "name": "Does Remote Spots work worldwide?",
+        "name": "Funktioniert OffGrid-Orte in den Alpen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Remote Spots works anywhere on Earth where OpenStreetMap has road data, which covers virtually the entire planet. It works especially well in Europe, North America, and other well-mapped regions."
+          "text": "Ja, OffGrid-Orte ist optimiert für die Alpenregion und ganz DACH (Deutschland, Österreich, Schweiz). Die OpenStreetMap-Daten sind hier besonders detailliert und aktuell."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I use Remote Spots for wild camping?",
+        "name": "Kann ich OffGrid-Orte für Wildcampen nutzen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. Remote Spots is designed for wilderness campers, among others. You can filter for forest cover and nearby water sources to find ideal bivouac spots. Always check local regulations regarding wild camping in your area."
+          "text": "Absolut. OffGrid-Orte ist unter anderem für Wildcamper konzipiert. Du kannst nach Waldbedeckung und Gewässernähe filtern – ideal für Biwakplätze. Beachte immer die lokalen Regelungen zum Wildcampen in deiner Region."
         }
       },
       {
         "@type": "Question",
-        "name": "What data does Remote Spots use?",
+        "name": "Welche Daten nutzt OffGrid-Orte?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Remote Spots uses road, path, forest, and water data from OpenStreetMap — the world's largest open geographic database, maintained by a community of over 10 million contributors. No personal data is collected or stored."
+          "text": "OffGrid-Orte nutzt Strassen-, Weg-, Wald- und Gewässerdaten von OpenStreetMap – der grössten offenen geografischen Datenbank der Welt mit über 10 Millionen Mitwirkenden. Es werden keine persönlichen Daten gesammelt oder gespeichert."
         }
       }
     ]
@@ -690,9 +730,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Remote Spots",
-    "url": "https://remote-spots.com",
-    "description": "Find the most remote locations far from any road"
+    "name": "OffGrid-Orte",
+    "url": "https://offgrid-orte.de",
+    "description": "Finde die abgelegensten Orte weit weg von jeder Strasse"
   }
   </script>
 </head>
@@ -703,46 +743,46 @@
   <section class="hero topo-bg mountain-bg">
     <div class="container">
       <nav class="nav">
-        <span class="nav-brand">Remote Spots</span>
-        <a href="https://app.remote-spots.com?utm_source=landing&utm_medium=cta" class="nav-link">
-          Open App →
+        <span class="nav-brand">OffGrid-Orte</span>
+        <a href="https://app.offgrid-orte.de?utm_source=landing&utm_medium=cta" class="nav-link">
+          App öffnen →
         </a>
       </nav>
     </div>
 
     <div class="container hero-content">
-      <p class="hero-overline">Wild Camping · Photography · Off-Grid</p>
+      <p class="hero-overline">Wildcampen · Fotografie · Off-Grid</p>
       
       <h1 class="hero-title serif">
-        Where no road leads anymore.
+        Wo keine Strasse mehr hinführt.
       </h1>
 
       <p class="hero-subtitle">
-        We calculate the exact points furthest from any road — and give you the GPS coordinates. Built on OpenStreetMap data covering the entire planet.
+        Wir berechnen die exakten Punkte mit maximaler Entfernung zu jeder Strasse – und liefern dir die GPS-Koordinaten. Basierend auf OpenStreetMap-Daten für ganz Europa.
       </p>
 
       <div class="hero-actions">
-        <a href="https://app.remote-spots.com?utm_source=landing&utm_medium=cta" class="btn-primary">
-          Find your first spot
+        <a href="https://app.offgrid-orte.de?utm_source=landing&utm_medium=cta" class="btn-primary">
+          Finde deinen ersten Spot
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
-        <a href="#how-it-works" class="btn-secondary">How it works</a>
+        <a href="#so-funktionierts" class="btn-secondary">So funktioniert's</a>
       </div>
 
-      <p class="hero-note">Free to try · No signup required</p>
+      <p class="hero-note">Kostenlos testen · Keine Anmeldung nötig</p>
 
       <div class="stats-bar">
         <div class="stat-item">
           <span class="stat-value mono">±1m</span>
-          <span class="stat-label">precision</span>
+          <span class="stat-label">Präzision</span>
         </div>
         <div class="stat-item">
           <span class="stat-value mono">~30s</span>
-          <span class="stat-label">per search</span>
+          <span class="stat-label">pro Suche</span>
         </div>
         <div class="stat-item">
           <span class="stat-value mono">GPX</span>
-          <span class="stat-label">export</span>
+          <span class="stat-label">Export</span>
         </div>
       </div>
     </div>
@@ -757,8 +797,8 @@
   <section class="screenshot-section">
     <div class="container" style="max-width: 960px;">
       <div class="screenshot-wrapper">
-        <img src="app-screenshot.png" 
-             alt="Remote Spots Finder App – Finding remote locations in the Scottish Highlands"
+        <img src="images/app-screenshot.png" 
+             alt="OffGrid-Orte App – Abgelegene Orte in den Schweizer Alpen finden"
              loading="lazy">
       </div>
     </div>
@@ -766,26 +806,26 @@
 
 
   <!-- ======== HOW IT WORKS ======== -->
-  <section id="how-it-works" class="section" style="background: var(--bg-forest);">
+  <section id="so-funktionierts" class="section" style="background: var(--bg-forest);">
     <div class="container">
-      <p class="section-label centered">How it works</p>
-      <h2 class="section-title centered serif">Three steps to your spot</h2>
+      <p class="section-label centered">So funktioniert's</p>
+      <h2 class="section-title centered serif">Drei Schritte zu deinem Spot</h2>
 
       <div class="steps">
         <div class="step">
           <div class="step-number mono">01</div>
-          <h3 class="step-title">Pick a location</h3>
-          <p class="step-desc">Click anywhere on the map to set your search center. Works globally — from the Scottish Highlands to the Swiss Alps.</p>
+          <h3 class="step-title">Ort wählen</h3>
+          <p class="step-desc">Klicke irgendwo auf die Karte, um dein Suchzentrum festzulegen. Funktioniert überall – von den Schweizer Alpen bis zum Schwarzwald.</p>
         </div>
         <div class="step">
           <div class="step-number mono">02</div>
-          <h3 class="step-title">Set your filters</h3>
-          <p class="step-desc">Choose search radius, terrain type, forest cover, and water proximity. The algorithm does the rest.</p>
+          <h3 class="step-title">Filter setzen</h3>
+          <p class="step-desc">Wähle Suchradius, Geländetyp, Waldbedeckung und Gewässernähe. Der Algorithmus erledigt den Rest.</p>
         </div>
         <div class="step">
           <div class="step-number mono">03</div>
-          <h3 class="step-title">Get coordinates</h3>
-          <p class="step-desc">Export to GPX, GeoJSON, or CSV. Navigate directly to your remote spot with any GPS device or app.</p>
+          <h3 class="step-title">Koordinaten erhalten</h3>
+          <p class="step-desc">Exportiere als GPX, GeoJSON oder CSV. Navigiere direkt zu deinem abgelegenen Spot mit jedem GPS-Gerät oder App.</p>
         </div>
       </div>
     </div>
@@ -795,27 +835,27 @@
   <!-- ======== USE CASES ======== -->
   <section class="section topo-bg" style="background: var(--bg-deep);">
     <div class="container">
-      <p class="section-label centered">Built for</p>
-      <h2 class="section-title centered serif">People who seek solitude</h2>
+      <p class="section-label centered">Entwickelt für</p>
+      <h2 class="section-title centered serif">Menschen, die Einsamkeit suchen</h2>
       <p class="section-subtitle centered">
-        Whether you're planning a wilderness retreat, scouting locations, or preparing for the unexpected.
+        Ob du einen Wildnis-Rückzugsort planst, Locations scoutest, oder dich auf das Unerwartete vorbereitest.
       </p>
 
       <div class="use-cases">
         <div class="use-case">
           <span class="use-case-icon">🏕️</span>
-          <h3 class="use-case-title">Wilderness campers</h3>
-          <p class="use-case-desc">Find legal bivouac spots far from trails. Filter for forest cover and nearby water sources — ideal for multi-day backcountry trips.</p>
+          <h3 class="use-case-title">Wildcamper</h3>
+          <p class="use-case-desc">Finde legale Biwakplätze abseits der Wege. Filtere nach Waldbedeckung und Gewässernähe – ideal für mehrtägige Touren.</p>
         </div>
         <div class="use-case">
           <span class="use-case-icon">📸</span>
-          <h3 class="use-case-title">Photographers</h3>
-          <p class="use-case-desc">No people. No cars. No powerlines. Just untouched landscapes waiting for your lens.</p>
+          <h3 class="use-case-title">Fotografen</h3>
+          <p class="use-case-desc">Keine Menschen. Keine Autos. Keine Stromleitungen. Nur unberührte Landschaften, die auf deine Linse warten.</p>
         </div>
         <div class="use-case">
           <span class="use-case-icon">🎒</span>
-          <h3 class="use-case-title">Off-grid planners</h3>
-          <p class="use-case-desc">Systematically identify fallback locations with forest cover, water access, and terrain filters.</p>
+          <h3 class="use-case-title">Off-Grid-Planer</h3>
+          <p class="use-case-desc">Identifiziere systematisch Rückzugsorte mit Waldbedeckung, Wasserquelle und Geländefiltern.</p>
         </div>
       </div>
     </div>
@@ -823,50 +863,50 @@
 
 
   <!-- ======== PRICING ======== -->
-  <section id="pricing" class="section" style="background: var(--bg-forest);">
+  <section id="preise" class="section" style="background: var(--bg-forest);">
     <div class="container">
-      <p class="section-label centered">Pricing</p>
-      <h2 class="section-title centered serif">Simple, one-time</h2>
-      <p class="section-subtitle centered">Start for free. Upgrade when you need more.</p>
+      <p class="section-label centered">Preise</p>
+      <h2 class="section-title centered serif">Einfach, einmalig</h2>
+      <p class="section-subtitle centered">Starte kostenlos. Upgrade wenn du mehr brauchst.</p>
 
       <div class="pricing-grid">
         <!-- Free -->
         <div class="pricing-card">
-          <div class="pricing-tier">Free</div>
-          <div class="pricing-price">$0</div>
-          <div class="pricing-note">Forever</div>
+          <div class="pricing-tier">Kostenlos</div>
+          <div class="pricing-price">0 €</div>
+          <div class="pricing-note">Für immer</div>
 
           <ul class="pricing-features">
-            <li>Up to <strong>5 km</strong> radius</li>
-            <li><strong>10 spots</strong> per search</li>
-            <li>Elevation filter</li>
-            <li>CSV export</li>
+            <li>Bis zu <strong>5 km</strong> Radius</li>
+            <li><strong>10 Spots</strong> pro Suche</li>
+            <li>Höhenfilter</li>
+            <li>CSV-Export</li>
           </ul>
 
-          <a href="https://app.remote-spots.com?utm_source=landing&utm_medium=cta" class="pricing-cta outline">
-            Get started
+          <a href="https://app.offgrid-orte.de?utm_source=landing&utm_medium=cta" class="pricing-cta outline">
+            Jetzt starten
           </a>
         </div>
 
         <!-- Pro -->
         <div class="pricing-card featured">
-          <div class="pricing-badge">Popular</div>
+          <div class="pricing-badge">Beliebt</div>
           <div class="pricing-tier">Pro</div>
-          <div class="pricing-price">$5 <span>one-time</span></div>
-          <div class="pricing-note">Lifetime access</div>
+          <div class="pricing-price">5 € <span>einmalig</span></div>
+          <div class="pricing-note">Lebenslanger Zugang</div>
 
           <ul class="pricing-features">
-            <li>Everything in Free</li>
-            <li>Up to <strong>50 km</strong> radius</li>
-            <li><strong>50 spots</strong> per search</li>
-            <li><strong>Including footpaths</strong> mode</li>
-            <li><strong>Forest cover</strong> filter</li>
-            <li><strong>Near water</strong> filter</li>
-            <li><strong>GPX &amp; GeoJSON</strong> export</li>
+            <li>Alles aus Kostenlos</li>
+            <li>Bis zu <strong>50 km</strong> Radius</li>
+            <li><strong>50 Spots</strong> pro Suche</li>
+            <li><strong>Inkl. Wanderwege</strong> Modus</li>
+            <li><strong>Waldbedeckung</strong>-Filter</li>
+            <li><strong>Gewässernähe</strong>-Filter</li>
+            <li><strong>GPX &amp; GeoJSON</strong> Export</li>
           </ul>
 
           <a href="https://remote-spots.lemonsqueezy.com/checkout/buy/9b0eeebf-f1bf-49a8-a6c0-612f21e7bfe0" class="pricing-cta filled">
-            Get Pro Access
+            Pro freischalten
           </a>
         </div>
       </div>
@@ -877,77 +917,118 @@
   <!-- ======== FAQ ======== -->
   <section class="section" style="background: var(--bg-deep);">
     <div class="container" style="max-width: 740px;">
-      <p class="section-label centered">Questions</p>
-      <h2 class="section-title centered serif">Frequently asked</h2>
+      <p class="section-label centered">Fragen</p>
+      <h2 class="section-title centered serif">Häufig gefragt</h2>
 
       <div class="faq-list">
         <details class="faq-item" open>
           <summary class="faq-question">
-            How does Remote Spots find remote locations?
+            Wie findet OffGrid-Orte abgelegene Orte?
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="faq-answer">
-            Remote Spots uses OpenStreetMap road data and a distance transform algorithm to calculate 
-            the exact points furthest from any road within your chosen search area. The algorithm 
-            creates a grid over your area, maps all known roads, and then finds the coordinates 
-            with the maximum distance from the nearest road. Results are precise to the meter and 
-            returned as GPS coordinates you can export directly to your navigation device.
+            OffGrid-Orte nutzt OpenStreetMap-Strassendaten und einen Distanztransformations-Algorithmus, 
+            um die exakten Punkte mit maximaler Entfernung zu Strassen in deinem gewählten Suchgebiet 
+            zu berechnen. Der Algorithmus erstellt ein Raster über dein Gebiet, kartiert alle bekannten 
+            Strassen und findet dann die Koordinaten mit der grössten Distanz zur nächsten Strasse. 
+            Die Ergebnisse sind auf den Meter genau und werden als GPS-Koordinaten geliefert, die du 
+            direkt auf dein Navigationsgerät exportieren kannst.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Does Remote Spots work worldwide?
+            Funktioniert OffGrid-Orte in den Alpen?
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="faq-answer">
-            Yes. Remote Spots works anywhere on Earth where OpenStreetMap has road data — which 
-            covers virtually the entire planet. It works especially well in Europe, North America, 
-            Scandinavia, and other well-mapped regions. In more remote parts of the world, results 
-            may be less precise due to fewer mapped roads.
+            Ja, OffGrid-Orte ist optimiert für die DACH-Region (Deutschland, Österreich, Schweiz) und 
+            die Alpen. Die OpenStreetMap-Daten sind hier besonders detailliert und werden ständig von 
+            der Community aktualisiert. Das Tool funktioniert überall in Europa, wo OSM-Strassendaten 
+            verfügbar sind.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Can I use Remote Spots for wild camping?
+            Kann ich OffGrid-Orte für Wildcampen nutzen?
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="faq-answer">
-            Absolutely. Remote Spots is designed for wilderness campers, among others. Use the 
-            forest cover filter to find spots with tree canopy and the water proximity filter to 
-            stay near a water source — ideal for finding bivouac locations. Always check local 
-            regulations regarding wild camping in your region. In many European countries like 
-            Sweden, Norway, Finland, and Scotland, wild camping is broadly permitted under 
-            "Right to Roam" or "Everyman's Right" laws.
+            Absolut. OffGrid-Orte ist unter anderem für Wildcamper konzipiert. Nutze den 
+            Waldbedeckungs-Filter für Spots unter Bäumen und den Gewässernähe-Filter, um in der 
+            Nähe einer Wasserquelle zu bleiben – ideal für Biwakplätze. Beachte immer die lokalen 
+            Regelungen zum Wildcampen. In der Schweiz ist Biwakieren oberhalb der Waldgrenze generell 
+            erlaubt, in Österreich und Deutschland gelten unterschiedliche Landesregeln.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Is Remote Spots free?
+            Ist OffGrid-Orte kostenlos?
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="faq-answer">
-            Yes, the free plan includes a 5 km search radius, up to 10 spots per search, 
-            an elevation filter, and CSV export. The Pro plan is a one-time $5 payment (no 
-            subscription) and unlocks 50 km radius, 50 spots, forest and water filters, 
-            footpath mode, and GPX/GeoJSON export.
+            Ja, der kostenlose Plan beinhaltet einen 5 km Suchradius, bis zu 10 Spots pro Suche, 
+            einen Höhenfilter und CSV-Export. Der Pro-Plan ist eine einmalige Zahlung von 5 € 
+            (kein Abo) und schaltet 50 km Radius, 50 Spots, Wald- und Wasserfilter, 
+            Wanderwege-Modus und GPX/GeoJSON-Export frei.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            What data does Remote Spots use?
+            Welche Daten nutzt OffGrid-Orte?
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="faq-answer">
-            Remote Spots uses road, path, forest, and water data from OpenStreetMap — the 
-            world's largest open geographic database, maintained by a community of over 10 million 
-            contributors. This means the data is constantly improving and covers even remote 
-            regions of the world. No personal data is collected or stored when you use the app.
+            OffGrid-Orte nutzt Strassen-, Weg-, Wald- und Gewässerdaten von OpenStreetMap – der 
+            grössten offenen geografischen Datenbank der Welt, gepflegt von einer Community mit 
+            über 10 Millionen Mitwirkenden. Das bedeutet, die Daten werden ständig verbessert und 
+            decken auch abgelegene Regionen ab. Es werden keine persönlichen Daten gesammelt oder 
+            gespeichert, wenn du die App nutzt.
           </p>
         </details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== REGIONS ======== -->
+  <section class="section" style="background: var(--bg-deep);">
+    <div class="container">
+      <p class="section-label centered">Verfügbare Regionen</p>
+      <h2 class="section-title centered serif">Wo du suchen kannst</h2>
+      <p class="section-subtitle centered">
+        Unsere Daten decken aktuell diese Regionen ab. Weitere folgen.
+      </p>
+
+      <div class="regions-grid">
+        <a href="/schweiz" class="region-card">
+          <span class="region-flag">🇨🇭</span>
+          <span class="region-name">Schweiz</span>
+          <span class="region-arrow">→</span>
+        </a>
+        <a href="/oesterreich" class="region-card">
+          <span class="region-flag">🇦🇹</span>
+          <span class="region-name">Österreich</span>
+          <span class="region-arrow">→</span>
+        </a>
+        <a href="/bayern" class="region-card">
+          <span class="region-flag">🇩🇪</span>
+          <span class="region-name">Bayern</span>
+          <span class="region-arrow">→</span>
+        </a>
+        <a href="/baden-wuerttemberg" class="region-card">
+          <span class="region-flag">🇩🇪</span>
+          <span class="region-name">Baden-Württemberg</span>
+          <span class="region-arrow">→</span>
+        </a>
+        <a href="/liechtenstein" class="region-card">
+          <span class="region-flag">🇱🇮</span>
+          <span class="region-name">Liechtenstein</span>
+          <span class="region-arrow">→</span>
+        </a>
       </div>
     </div>
   </section>
@@ -956,11 +1037,11 @@
   <!-- ======== FINAL CTA ======== -->
   <section class="final-cta topo-bg" style="background: var(--bg-forest);">
     <div class="container">
-      <h2 class="section-title centered serif">Find your first remote spot</h2>
-      <p class="section-subtitle centered">No signup. No credit card. Just click and explore.</p>
+      <h2 class="section-title centered serif">Finde deinen ersten abgelegenen Spot</h2>
+      <p class="section-subtitle centered">Keine Anmeldung. Keine Kreditkarte. Einfach klicken und erkunden.</p>
 
-      <a href="https://app.remote-spots.com?utm_source=landing&utm_medium=cta" class="btn-primary" style="font-size: 1rem; padding: 1rem 2.25rem;">
-        Open the App
+      <a href="https://app.offgrid-orte.de?utm_source=landing&utm_medium=cta" class="btn-primary" style="font-size: 1rem; padding: 1rem 2.25rem;">
+        App öffnen
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
     </div>
@@ -971,14 +1052,14 @@
   <footer class="footer" style="background: var(--bg-deep);">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-brand">Remote Spots</span>
+        <span class="footer-brand">OffGrid-Orte</span>
         <div class="footer-links">
-          <a href="mailto:support@remote-spots.com">Contact</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a href="/refund">Refunds</a>
+          <a href="mailto:support@offgrid-orte.de">Kontakt</a>
+          <a href="/datenschutz">Datenschutz</a>
+          <a href="/agb">AGB</a>
+          <a href="/widerruf">Widerruf</a>
         </div>
-        <span class="footer-copy">© 2026 Remote Spots</span>
+        <span class="footer-copy">© 2026 OffGrid-Orte</span>
       </div>
     </div>
   </footer>

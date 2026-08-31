@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO -->
+  <title>Abgelegene Orte in Bayern finden – Wildcampen & Naturerlebnis</title>
+  <meta name="description" content="Finde die abgelegensten Orte in Bayern. Perfekt für Naturliebhaber, Fotografen und Off-Grid-Abenteuer in den Bayerischen Alpen, im Bayerischen Wald und Franken.">
+  <meta name="keywords" content="wildcampen bayern, abgelegene orte bayern, bayerische alpen, bayerischer wald, off-grid bayern, naturcamping bayern, biwak bayern">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://offgrid-orte.de/bayern">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://offgrid-orte.de/bayern">
+  <meta property="og:title" content="Abgelegene Orte in Bayern finden">
+  <meta property="og:description" content="Finde die abgelegensten Orte in Bayern. GPS-Koordinaten für Naturerlebnisse und Off-Grid-Abenteuer.">
+  <meta property="og:image" content="https://offgrid-orte.de/images/og-bayern.png">
+  <meta property="og:locale" content="de_DE">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-deep: #111610;
+      --bg-forest: #181d14;
+      --bg-card: #1e2418;
+      --bg-card-hover: #252c1e;
+      --text-cream: #e8e2d0;
+      --text-sand: #c4bfac;
+      --text-muted: #8a8270;
+      --text-dim: #5e5a4d;
+      --moss: #6b8f5a;
+      --moss-soft: #5a7a4c;
+      --border: rgba(200, 190, 170, 0.08);
+      --border-light: rgba(200, 190, 170, 0.14);
+    }
+
+    body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--bg-deep); color: var(--text-cream); -webkit-font-smoothing: antialiased; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .nav { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
+    .nav-brand { font-size: 0.75rem; font-weight: 500; letter-spacing: 2px; color: var(--text-sand); text-transform: uppercase; }
+    .nav-back { font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s; }
+    .nav-back:hover { color: var(--text-cream); }
+
+    .hero { padding: 4rem 0 3rem; text-align: center; }
+    .hero-flag { font-size: 4rem; margin-bottom: 1.5rem; }
+    .hero-title { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; margin-bottom: 1rem; }
+    .hero-subtitle { font-size: 1.1rem; color: var(--text-muted); line-height: 1.7; max-width: 600px; margin: 0 auto 2rem; }
+
+    .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--moss); color: var(--text-cream); font-family: inherit; font-size: 1rem; font-weight: 500; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s, transform 0.15s; }
+    .btn-primary:hover { background: var(--moss-soft); transform: translateY(-2px); }
+    .btn-primary svg { width: 20px; height: 20px; }
+
+    .info-section { padding: 3rem 0; border-top: 1px solid var(--border); }
+    .info-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .info-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .info-text strong { color: var(--text-sand); font-weight: 500; }
+
+    .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .highlight { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
+    .highlight-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .highlight-title { font-size: 1rem; font-weight: 500; margin-bottom: 0.5rem; }
+    .highlight-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    .legal-note { padding: 1.5rem; background: rgba(107, 143, 90, 0.1); border: 1px solid rgba(107, 143, 90, 0.2); border-radius: 8px; margin: 2rem 0; }
+    .legal-note-title { font-size: 0.9rem; font-weight: 500; color: var(--moss); margin-bottom: 0.5rem; }
+    .legal-note-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
+
+    .other-regions { padding: 3rem 0; border-top: 1px solid var(--border); }
+    .other-regions-title { font-size: 1rem; color: var(--text-dim); margin-bottom: 1rem; }
+    .region-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .region-link { padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; color: var(--text-sand); transition: border-color 0.3s, background 0.3s; }
+    .region-link:hover { border-color: var(--moss); background: var(--bg-card-hover); }
+
+    .footer { padding: 2rem 0; border-top: 1px solid var(--border); text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--text-dim); transition: color 0.3s; }
+    .footer-links a:hover { color: var(--text-sand); }
+    .footer-copy { font-size: 0.75rem; color: var(--text-dim); }
+
+    @media (max-width: 640px) { .container { padding: 0 1.25rem; } .hero { padding: 3rem 0 2rem; } }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="nav-brand">OffGrid-Orte</a>
+      <a href="/" class="nav-back">← Alle Regionen</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-flag">🇩🇪</div>
+      <h1 class="hero-title serif">Abgelegene Orte in Bayern</h1>
+      <p class="hero-subtitle">
+        Entdecke die einsamsten Plätze in Deutschlands grösstem Bundesland – von den Bayerischen Alpen 
+        bis zum Bayerischen Wald, von Franken bis Schwaben.
+      </p>
+      <a href="https://app.offgrid-orte.de?lat=48.8&lng=11.5&zoom=7&utm_source=region&utm_medium=bayern" class="btn-primary">
+        Bayern erkunden
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </section>
+
+    <section class="info-section">
+      <h2 class="info-title serif">Wildcampen in Bayern</h2>
+      <p class="info-text">
+        Bayern bietet eine unglaubliche landschaftliche Vielfalt – von hochalpinen Gipfeln bis zu dichten Mittelgebirgswäldern. 
+        <strong>Wildcampen ist in Deutschland grundsätzlich verboten</strong>, aber das Übernachten in der Natur 
+        für Wanderer („Lagern zum Zweck der Erholung") wird vielerorts toleriert.
+      </p>
+      <p class="info-text">
+        Mit OffGrid-Orte findest du die <strong>abgelegensten Punkte</strong> weit weg von Strassen und Wegen – 
+        ideal für Naturfotografen, Vogelbeobachter oder einfach für Menschen, die Stille suchen.
+      </p>
+
+      <div class="highlights">
+        <div class="highlight">
+          <div class="highlight-icon">🏔️</div>
+          <div class="highlight-title">Bayerische Alpen</div>
+          <div class="highlight-desc">Zugspitze, Watzmann und unzählige Gipfel – Deutschlands alpines Herz.</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon">🌲</div>
+          <div class="highlight-title">Bayerischer Wald</div>
+          <div class="highlight-desc">Europas wilder Osten – Urwälder, Luchse und endlose Einsamkeit.</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon">🦌</div>
+          <div class="highlight-title">Fränkische Schweiz</div>
+          <div class="highlight-desc">Bizarre Felsen, dunkle Höhlen und romantische Täler.</div>
+        </div>
+      </div>
+
+      <div class="legal-note">
+        <div class="legal-note-title">📋 Rechtliche Hinweise</div>
+        <div class="legal-note-text">
+          Wildcampen ist in Bayern wie in ganz Deutschland nicht erlaubt. Ein kurzes Rasten oder Biwakieren 
+          ohne Zelt wird jedoch oft geduldet, solange du keine Spuren hinterlässt. In Naturschutzgebieten 
+          und Nationalparks gelten strenge Betretungsverbote. Bitte respektiere die Natur.
+        </div>
+      </div>
+    </section>
+
+    <section class="other-regions">
+      <div class="other-regions-title">Weitere Regionen</div>
+      <div class="region-links">
+        <a href="/schweiz" class="region-link">🇨🇭 Schweiz</a>
+        <a href="/oesterreich" class="region-link">🇦🇹 Österreich</a>
+        <a href="/baden-wuerttemberg" class="region-link">🇩🇪 Baden-Württemberg</a>
+        <a href="/liechtenstein" class="region-link">🇱🇮 Liechtenstein</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/">Startseite</a>
+        <a href="mailto:support@offgrid-orte.de">Kontakt</a>
+        <a href="/datenschutz">Datenschutz</a>
+        <a href="/agb">AGB</a>
+      </div>
+      <div class="footer-copy">© 2026 OffGrid-Orte</div>
+    </footer>
+  </div>
+
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
