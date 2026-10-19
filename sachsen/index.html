@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abgelegene Orte in Sachsen finden – Sächsische Schweiz, Erzgebirge & Off-Grid</title>
+  <meta name="description" content="Finde die abgelegensten Orte in Sachsen. Sächsische Schweiz, Erzgebirge und Zittauer Gebirge – GPS-Koordinaten für einsame Wanderungen, Biwak-Spots und Off-Grid-Abenteuer.">
+  <meta name="keywords" content="wildcampen sachsen, sächsische schweiz abgelegen, erzgebirge wildcampen, off-grid sachsen, boofen sächsische schweiz, biwak sachsen, abgelegene orte sachsen, GPS koordinaten einsam">
+
+  <link rel="canonical" href="https://offgrid-orte.de/sachsen">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://offgrid-orte.de/sachsen">
+  <meta property="og:title" content="Abgelegene Orte in Sachsen – Sächsische Schweiz & Off-Grid">
+  <meta property="og:description" content="Finde die abgelegensten Orte in Sachsen. GPS-Koordinaten für einsame Spots in der Sächsischen Schweiz und im Erzgebirge.">
+  <meta property="og:image" content="https://offgrid-orte.de/images/og-sachsen.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="OffGrid-Orte">
+  <meta property="og:locale" content="de_DE">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abgelegene Orte in Sachsen – Sächsische Schweiz & Off-Grid">
+  <meta name="twitter:image" content="https://offgrid-orte.de/images/og-sachsen.png">
+
+  <meta name="geo.region" content="DE-SN">
+  <meta name="geo.placename" content="Sachsen">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg-deep: #111610; --bg-forest: #181d14; --bg-card: #1e2418; --bg-card-hover: #252c1e;
+      --text-cream: #e8e2d0; --text-sand: #c4bfac; --text-muted: #8a8270; --text-dim: #5e5a4d;
+      --moss: #6b8f5a; --moss-soft: #5a7a4c;
+      --border: rgba(200, 190, 170, 0.08); --border-light: rgba(200, 190, 170, 0.14);
+    }
+    body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; background: var(--bg-deep); color: var(--text-cream); -webkit-font-smoothing: antialiased; }
+    .serif { font-family: 'DM Serif Display', Georgia, serif; } .mono { font-family: 'JetBrains Mono', monospace; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .nav { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
+    .nav-brand { font-size: 0.75rem; font-weight: 500; letter-spacing: 2px; color: var(--text-sand); text-transform: uppercase; }
+    .nav-back { font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s; } .nav-back:hover { color: var(--text-cream); }
+    .hero { padding: 4rem 0 3rem; text-align: center; }
+    .hero-flag { font-size: 4rem; margin-bottom: 1.5rem; }
+    .hero-title { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; margin-bottom: 1rem; }
+    .hero-subtitle { font-size: 1.1rem; color: var(--text-muted); line-height: 1.7; max-width: 600px; margin: 0 auto 2rem; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--moss); color: var(--text-cream); font-family: inherit; font-size: 1rem; font-weight: 500; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s, transform 0.15s; }
+    .btn-primary:hover { background: var(--moss-soft); transform: translateY(-2px); } .btn-primary svg { width: 20px; height: 20px; }
+    .content-section { padding: 3rem 0; border-top: 1px solid var(--border); }
+    .content-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .content-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .content-text strong { color: var(--text-sand); font-weight: 500; }
+    .region-cards { display: flex; flex-direction: column; gap: 1rem; margin: 2rem 0; }
+    .region-detail-card { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.3s; }
+    .region-detail-card:hover { border-color: var(--border-light); }
+    .region-detail-title { font-size: 1.05rem; font-weight: 500; color: var(--moss); margin-bottom: 0.5rem; }
+    .region-detail-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .region-detail-coord { display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; letter-spacing: 0.5px; color: var(--text-dim); background: rgba(107, 143, 90, 0.08); padding: 0.2rem 0.6rem; border-radius: 3px; }
+    .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .highlight { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
+    .highlight-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .highlight-title { font-size: 1rem; font-weight: 500; margin-bottom: 0.5rem; }
+    .highlight-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+    .legal-note { padding: 1.5rem; background: rgba(107, 143, 90, 0.1); border: 1px solid rgba(107, 143, 90, 0.2); border-radius: 8px; margin: 2rem 0; }
+    .legal-note-title { font-size: 0.9rem; font-weight: 500; color: var(--moss); margin-bottom: 0.75rem; }
+    .legal-note-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.75rem; }
+    .legal-note-text:last-child { margin-bottom: 0; }
+    .steps-list { counter-reset: step; display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+    .step-item { counter-increment: step; display: flex; gap: 0.75rem; align-items: baseline; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+    .step-item::before { content: counter(step) "."; color: var(--moss); font-weight: 500; flex-shrink: 0; }
+    .step-item strong { color: var(--text-sand); font-weight: 500; }
+    .cta-section { padding: 3rem 0; text-align: center; border-top: 1px solid var(--border); }
+    .cta-section .content-title { margin-bottom: 0.75rem; }
+    .cta-section .content-text { max-width: 500px; margin: 0 auto 2rem; text-align: center; }
+    .other-regions { padding: 3rem 0; border-top: 1px solid var(--border); }
+    .other-regions-title { font-size: 1rem; color: var(--text-dim); margin-bottom: 1rem; }
+    .region-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .region-link { padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; color: var(--text-sand); transition: border-color 0.3s, background 0.3s; }
+    .region-link:hover { border-color: var(--moss); background: var(--bg-card-hover); }
+    .footer { padding: 2rem 0; border-top: 1px solid var(--border); text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--text-dim); transition: color 0.3s; } .footer-links a:hover { color: var(--text-sand); }
+    .footer-copy { font-size: 0.75rem; color: var(--text-dim); }
+    @media (max-width: 640px) { .container { padding: 0 1.25rem; } .hero { padding: 3rem 0 2rem; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Abgelegene Orte in Sachsen finden – Sächsische Schweiz, Erzgebirge & Off-Grid",
+    "description": "Finde die abgelegensten Orte in Sachsen für einsame Wanderungen und Off-Grid-Abenteuer.",
+    "url": "https://offgrid-orte.de/sachsen",
+    "datePublished": "2026-06-15", "dateModified": "2026-10-08",
+    "author": { "@type": "Organization", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "publisher": { "@type": "Organization", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "isPartOf": { "@type": "WebSite", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "about": { "@type": "Place", "name": "Sachsen", "geo": { "@type": "GeoCoordinates", "latitude": 51.05, "longitude": 13.74 } }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="/" class="nav-brand">OffGrid-Orte</a>
+      <a href="/" class="nav-back">← Alle Regionen</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-flag">⛰️</div>
+      <h1 class="hero-title serif">Abgelegene Orte in Sachsen</h1>
+      <p class="hero-subtitle">
+        Sächsische Schweiz, Erzgebirge und Zittauer Gebirge – finde die einsamsten
+        Spots in Sachsens Felslandschaften und Wäldern. GPS-Koordinaten für
+        Biwak-Abenteuer und Off-Grid-Erlebnisse.
+      </p>
+      <a href="https://app.offgrid-orte.de?lat=51.0&lng=13.7&zoom=6&utm_source=region&utm_medium=sachsen" class="btn-primary">
+        Sachsen erkunden
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Warum Sachsen besonders ist</h2>
+      <p class="content-text">
+        Sachsen hat mit der <strong>Sächsischen Schweiz</strong> eines der
+        spektakulärsten Felsgebiete Mitteleuropas – und eine einzigartige Tradition:
+        das <strong>Boofen</strong>. Unter Felsüberhängen übernachten ist hier in
+        ausgewiesenen Boofen offiziell erlaubt. Nirgendwo sonst in Deutschland gibt es
+        eine vergleichbare legale Freiluft-Übernachtungskultur.
+      </p>
+      <p class="content-text">
+        Im Süden grenzt das <strong>Erzgebirge</strong> an Tschechien – ein langgezogener
+        Gebirgszug mit dichten Fichtenwäldern, Hochmooren und überraschend wenig Strassen
+        in den Kammlagen. Das <strong>Zittauer Gebirge</strong> im äussersten Osten ist
+        klein, aber wild: Sandsteinfelsen und tiefe Wälder auf engem Raum.
+      </p>
+
+      <div class="highlights">
+        <div class="highlight">
+          <div class="highlight-icon">🪨</div>
+          <div class="highlight-title">Boofen-Kultur</div>
+          <div class="highlight-desc">Die Sächsische Schweiz hat über 60 offizielle Boofen – legales Übernachten unter Felsüberhängen, einzigartig in Deutschland.</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon">🌲</div>
+          <div class="highlight-title">Erzgebirgswälder</div>
+          <div class="highlight-desc">Dichte Nadelwälder im Kammgebiet des Erzgebirges. Der Waldfilter zeigt die geschütztesten Plätze.</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon">💧</div>
+          <div class="highlight-title">Bäche & Quellen</div>
+          <div class="highlight-desc">Zahlreiche Gebirgsbäche im Erzgebirge und in der Sächsischen Schweiz. Gewässerfilter für Wasserversorgung nutzen.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Die abgelegensten Regionen Sachsens</h2>
+
+      <div class="region-cards">
+        <div class="region-detail-card">
+          <div class="region-detail-title">Nationalpark Sächsische Schweiz</div>
+          <div class="region-detail-text">
+            Das Elbsandsteingebirge mit seinen bizarren Felsformationen, tiefen
+            Schluchten und Tafelbergen. Die hintere Sächsische Schweiz – rund um
+            Grosser Winterberg und Kleiner Winterberg – ist deutlich weniger besucht
+            als die touristischen Highlights. Hier liegen auch die meisten offiziellen
+            Boofen. Unser Tool findet Spots abseits der Hauptwege.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 50.9°N, 14.2°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Osterzgebirge</div>
+          <div class="region-detail-text">
+            Das Kammgebiet des Osterzgebirges entlang der tschechischen Grenze –
+            rund um Altenberg, Holzhau und den Kahleberg – bietet weite, strassenfreie
+            Waldgebiete. Hochmoore wie das Georgenfelder Hochmoor und dichte
+            Fichtenwälder. Weniger touristisch als die Sächsische Schweiz, dafür
+            deutlich grössere zusammenhängende Waldflächen.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 50.7°N, 13.7°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Westerzgebirge</div>
+          <div class="region-detail-text">
+            Um den Fichtelberg (1215 m) und Keilberg erstreckt sich das höchste
+            Gebiet Sachsens. Kammwanderungen durch dichte Wälder und über offene
+            Hochflächen, mit Blick nach Tschechien. Die Region zwischen Oberwiesenthal
+            und Johanngeorgenstadt ist überraschend dünn besiedelt.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 50.4°N, 12.9°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Zittauer Gebirge</div>
+          <div class="region-detail-text">
+            Das kleinste Gebirge Sachsens, aber mit eigenem Charakter:
+            Sandsteinfelsen, vulkanische Kuppen und tiefe Wälder im Dreiländereck
+            Deutschland-Tschechien-Polen. Kompakt, aber überraschend einsam
+            abseits der Hauptwanderwege. Ideal für Tagestouren zu abgelegenen Spots.
+          </div>
+          <span class="region-detail-coord mono">Suche: 5 km Radius um 50.85°N, 14.75°E</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Wildcampen und Biwakieren – die Rechtslage</h2>
+      <p class="content-text">
+        Sachsen hat mit dem <strong>Boofen</strong> eine deutschlandweit einzigartige
+        Regelung. Darüber hinaus gelten die üblichen deutschen Einschränkungen.
+      </p>
+
+      <div class="legal-note">
+        <div class="legal-note-title">📋 Was du wissen musst</div>
+        <div class="legal-note-text">
+          <strong>Boofen (Sächsische Schweiz):</strong> In der Kernzone des
+          Nationalparks ist das Übernachten unter Felsüberhängen an über 60
+          offiziell markierten Boofen erlaubt – ohne Zelt, nur Isomatte und
+          Schlafsack. Liste der Boofen auf der Website des Nationalparks.
+          Nur für Kletterer und Wanderer, nicht für organisierte Gruppen.
+        </div>
+        <div class="legal-note-text">
+          <strong>Grundregel Sachsen:</strong> Ausserhalb der Boofen ist Wildcampen
+          wie in ganz Deutschland verboten. Das Sächsische Waldgesetz erlaubt das
+          Betreten, nicht das Übernachten.
+        </div>
+        <div class="legal-note-text">
+          <strong>Nationalpark Sächsische Schweiz:</strong> Übernachten nur in
+          offiziellen Boofen. Zelten ist im gesamten Nationalpark verboten.
+          Feuer ist ganzjährig verboten.
+        </div>
+        <div class="legal-note-text">
+          <strong>Erzgebirge & Rest:</strong> Keine spezielle Boofen-Regelung.
+          Einzelnes, unauffälliges Biwakieren wird in der Praxis selten geahndet,
+          ist aber formell nicht erlaubt.
+        </div>
+        <div class="legal-note-text">
+          Informiere dich vor jeder Tour. Respektiere die Boofen-Regeln und
+          hinterlasse keine Spuren.
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">So findest du abgelegene Orte in Sachsen</h2>
+      <div class="steps-list">
+        <div class="step-item"><strong>App öffnen</strong> und nach Sachsen navigieren</div>
+        <div class="step-item"><strong>Zielgebiet anklicken</strong> – Sächsische Schweiz, Erzgebirge oder Zittauer Gebirge</div>
+        <div class="step-item"><strong>Radius setzen</strong> – 5–10 km für die kompakten sächsischen Gebirge</div>
+        <div class="step-item"><strong>Filter nutzen</strong> – Waldbedeckung für Deckung, Gewässernähe für Wasserversorgung</div>
+        <div class="step-item"><strong>GPX exportieren</strong> und Spots vor Ort erkunden</div>
+      </div>
+      <p class="content-text">
+        Der <strong>Pro-Plan</strong> (einmalig 5 €) gibt dir den grösseren
+        Suchradius und die Wald- und Wasserfilter.
+      </p>
+    </section>
+
+    <section class="cta-section">
+      <h2 class="content-title serif">Bereit für Sachsen?</h2>
+      <p class="content-text">
+        Finde die abgelegensten Spots in der Sächsischen Schweiz und im Erzgebirge.
+      </p>
+      <a href="https://app.offgrid-orte.de?lat=51.0&lng=13.7&zoom=6&utm_source=region&utm_medium=sachsen" class="btn-primary">
+        Sachsen erkunden →
+      </a>
+    </section>
+
+    <section class="other-regions">
+      <div class="other-regions-title">Weitere Regionen</div>
+      <div class="region-links">
+        <a href="/schweiz" class="region-link">🇨🇭 Schweiz</a>
+        <a href="/oesterreich" class="region-link">🇦🇹 Österreich</a>
+        <a href="/bayern" class="region-link">🇩🇪 Bayern</a>
+        <a href="/baden-wuerttemberg" class="region-link">🇩🇪 Baden-Württemberg</a>
+        <a href="/hessen" class="region-link">🇩🇪 Hessen</a>
+        <a href="/thueringen" class="region-link">🇩🇪 Thüringen</a>
+        <a href="/liechtenstein" class="region-link">🇱🇮 Liechtenstein</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/">Startseite</a>
+        <a href="mailto:support@offgrid-orte.de">Kontakt</a>
+        <a href="/datenschutz">Datenschutz</a>
+        <a href="/agb">AGB</a>
+        <a href="/widerruf">Widerruf</a>
+      </div>
+      <div class="footer-copy">© 2026 OffGrid-Orte</div>
+    </footer>
+  </div>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

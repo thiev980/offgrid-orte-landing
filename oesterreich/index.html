@@ -3,34 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary SEO -->
-  <title>Abgelegene Orte in Österreich finden – Wildcampen & Biwak Spots</title>
-  <meta name="description" content="Finde die abgelegensten Orte in Österreich. Perfekt für Wildcampen, Biwakieren in den Alpen, Fotografie und Off-Grid-Abenteuer. GPS-Koordinaten für Tirol, Salzburg, Kärnten und mehr.">
-  <meta name="keywords" content="wildcampen österreich, biwakieren österreich, abgelegene orte österreich, tirol wildcampen, salzburg wildnis, off-grid österreich, biwak alpen">
-  
-  <!-- Canonical -->
-  <link rel="canonical" href="https://offgrid-orte.de/oesterreich">
-  
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://offgrid-orte.de/oesterreich">
-  <meta property="og:title" content="Abgelegene Orte in Österreich – Wildcampen & Biwak">
-  <meta property="og:description" content="Finde die abgelegensten Orte in Österreich. GPS-Koordinaten für Wildcampen und Off-Grid-Abenteuer.">
-  <meta property="og:image" content="https://offgrid-orte.de/images/og-oesterreich.png">
-  <meta property="og:locale" content="de_AT">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
 
-  <!-- Fonts -->
+  <title>Abgelegene Orte in Österreich finden – Wildcampen, Biwak & Off-Grid Spots</title>
+  <meta name="description" content="Finde die abgelegensten Orte in Österreich. Tirol, Salzburger Land, Kärnten, Vorarlberg und Osttirol – GPS-Koordinaten für Biwakplätze, Wildcampen und Off-Grid-Abenteuer in den österreichischen Alpen.">
+  <meta name="keywords" content="wildcampen österreich, biwakieren österreich, abgelegene orte österreich, österreichische alpen wildcampen, off-grid österreich, biwak spots tirol, GPS koordinaten alpen, wildcampen tirol, wildcampen salzburg, wildcampen regeln österreich">
+
+  <link rel="canonical" href="https://offgrid-orte.de/oesterreich">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://offgrid-orte.de/oesterreich">
+  <meta property="og:title" content="Abgelegene Orte in Österreich – Wildcampen, Biwak & Off-Grid">
+  <meta property="og:description" content="Finde die abgelegensten Orte in Österreich. GPS-Koordinaten für Biwakplätze, Wildcampen und Off-Grid-Abenteuer in den Alpen.">
+  <meta property="og:image" content="https://offgrid-orte.de/images/og-oesterreich.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="OffGrid-Orte">
+  <meta property="og:locale" content="de_AT">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abgelegene Orte in Österreich – Wildcampen & Biwak">
+  <meta name="twitter:image" content="https://offgrid-orte.de/images/og-oesterreich.png">
+
+  <meta name="geo.region" content="AT">
+  <meta name="geo.placename" content="Österreich">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
       --bg-deep: #111610;
       --bg-forest: #181d14;
@@ -42,70 +48,85 @@
       --text-dim: #5e5a4d;
       --moss: #6b8f5a;
       --moss-soft: #5a7a4c;
+      --moss-bg: rgba(107, 143, 90, 0.12);
       --border: rgba(200, 190, 170, 0.08);
       --border-light: rgba(200, 190, 170, 0.14);
     }
-
-    body {
-      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
-      background: var(--bg-deep);
-      color: var(--text-cream);
-      -webkit-font-smoothing: antialiased;
-    }
-
+    body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; background: var(--bg-deep); color: var(--text-cream); -webkit-font-smoothing: antialiased; }
     .serif { font-family: 'DM Serif Display', Georgia, serif; }
-
+    .mono { font-family: 'JetBrains Mono', monospace; }
     a { color: inherit; text-decoration: none; }
-
     .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
-
     .nav { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
     .nav-brand { font-size: 0.75rem; font-weight: 500; letter-spacing: 2px; color: var(--text-sand); text-transform: uppercase; }
     .nav-back { font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s; }
     .nav-back:hover { color: var(--text-cream); }
-
     .hero { padding: 4rem 0 3rem; text-align: center; }
     .hero-flag { font-size: 4rem; margin-bottom: 1.5rem; }
     .hero-title { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; margin-bottom: 1rem; }
     .hero-subtitle { font-size: 1.1rem; color: var(--text-muted); line-height: 1.7; max-width: 600px; margin: 0 auto 2rem; }
-
     .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--moss); color: var(--text-cream); font-family: inherit; font-size: 1rem; font-weight: 500; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s, transform 0.15s; }
     .btn-primary:hover { background: var(--moss-soft); transform: translateY(-2px); }
     .btn-primary svg { width: 20px; height: 20px; }
-
-    .info-section { padding: 3rem 0; border-top: 1px solid var(--border); }
-    .info-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
-    .info-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
-    .info-text strong { color: var(--text-sand); font-weight: 500; }
-
+    .content-section { padding: 3rem 0; border-top: 1px solid var(--border); }
+    .content-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .content-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .content-text strong { color: var(--text-sand); font-weight: 500; }
+    .region-cards { display: flex; flex-direction: column; gap: 1rem; margin: 2rem 0; }
+    .region-detail-card { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.3s; }
+    .region-detail-card:hover { border-color: var(--border-light); }
+    .region-detail-title { font-size: 1.05rem; font-weight: 500; color: var(--moss); margin-bottom: 0.5rem; }
+    .region-detail-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .region-detail-coord { display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; letter-spacing: 0.5px; color: var(--text-dim); background: rgba(107, 143, 90, 0.08); padding: 0.2rem 0.6rem; border-radius: 3px; }
     .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
     .highlight { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
     .highlight-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
     .highlight-title { font-size: 1rem; font-weight: 500; margin-bottom: 0.5rem; }
     .highlight-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
-
     .legal-note { padding: 1.5rem; background: rgba(107, 143, 90, 0.1); border: 1px solid rgba(107, 143, 90, 0.2); border-radius: 8px; margin: 2rem 0; }
-    .legal-note-title { font-size: 0.9rem; font-weight: 500; color: var(--moss); margin-bottom: 0.5rem; }
-    .legal-note-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
-
+    .legal-note-title { font-size: 0.9rem; font-weight: 500; color: var(--moss); margin-bottom: 0.75rem; }
+    .legal-note-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.75rem; }
+    .legal-note-text:last-child { margin-bottom: 0; }
+    .steps-list { counter-reset: step; display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+    .step-item { counter-increment: step; display: flex; gap: 0.75rem; align-items: baseline; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+    .step-item::before { content: counter(step) "."; color: var(--moss); font-weight: 500; flex-shrink: 0; }
+    .step-item strong { color: var(--text-sand); font-weight: 500; }
+    .cta-section { padding: 3rem 0; text-align: center; border-top: 1px solid var(--border); }
+    .cta-section .content-title { margin-bottom: 0.75rem; }
+    .cta-section .content-text { max-width: 500px; margin: 0 auto 2rem; text-align: center; }
     .other-regions { padding: 3rem 0; border-top: 1px solid var(--border); }
     .other-regions-title { font-size: 1rem; color: var(--text-dim); margin-bottom: 1rem; }
     .region-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
     .region-link { padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; color: var(--text-sand); transition: border-color 0.3s, background 0.3s; }
     .region-link:hover { border-color: var(--moss); background: var(--bg-card-hover); }
-
     .footer { padding: 2rem 0; border-top: 1px solid var(--border); text-align: center; }
     .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
     .footer-links a { font-size: 0.8rem; color: var(--text-dim); transition: color 0.3s; }
     .footer-links a:hover { color: var(--text-sand); }
     .footer-copy { font-size: 0.75rem; color: var(--text-dim); }
-
     @media (max-width: 640px) { .container { padding: 0 1.25rem; } .hero { padding: 3rem 0 2rem; } }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Abgelegene Orte in Österreich finden – Wildcampen, Biwak & Off-Grid Spots",
+    "description": "Finde die abgelegensten Orte in Österreich für Wildcampen, Biwakieren und Off-Grid-Abenteuer in den österreichischen Alpen.",
+    "url": "https://offgrid-orte.de/oesterreich",
+    "datePublished": "2026-04-07",
+    "dateModified": "2026-10-08",
+    "author": { "@type": "Organization", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "publisher": { "@type": "Organization", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "isPartOf": { "@type": "WebSite", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "about": { "@type": "Place", "name": "Österreich", "geo": { "@type": "GeoCoordinates", "latitude": 47.07, "longitude": 13.34 } }
+  }
+  </script>
 </head>
 
 <body>
   <div class="container">
+
     <nav class="nav">
       <a href="/" class="nav-brand">OffGrid-Orte</a>
       <a href="/" class="nav-back">← Alle Regionen</a>
@@ -115,53 +136,205 @@
       <div class="hero-flag">🇦🇹</div>
       <h1 class="hero-title serif">Abgelegene Orte in Österreich</h1>
       <p class="hero-subtitle">
-        Entdecke die einsamsten Plätze in den österreichischen Alpen – von Tirol bis Kärnten, 
-        von der Steiermark bis Vorarlberg. Perfekt für alpine Biwaktouren und echte Wildnis.
+        Finde die einsamsten Spots in den österreichischen Alpen – von den Ötztaler Alpen
+        bis zu den Hohen Tauern. Exakte GPS-Koordinaten für Biwaktouren, Landschaftsfotografie
+        und Off-Grid-Abenteuer.
       </p>
-      <a href="https://app.offgrid-orte.de?lat=47.5&lng=13.5&zoom=7&utm_source=region&utm_medium=oesterreich" class="btn-primary">
+      <a href="https://app.offgrid-orte.de?lat=47.1&lng=13.3&zoom=5&utm_source=region&utm_medium=oesterreich" class="btn-primary">
         Österreich erkunden
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
     </section>
 
-    <section class="info-section">
-      <h2 class="info-title serif">Wildcampen in Österreich</h2>
-      <p class="info-text">
-        Österreich ist ein Paradies für Bergliebhaber – die Regelungen fürs Wildcampen sind jedoch strenger als in der Schweiz. 
-        <strong>Grundsätzlich ist Wildcampen auf öffentlichem Grund nicht erlaubt</strong>, aber es gibt Ausnahmen: 
-        In vielen alpinen Regionen wird ein einzelnes Notbiwak oberhalb der Waldgrenze toleriert.
+    <section class="content-section">
+      <h2 class="content-title serif">Warum Österreich ideal für abgelegene Orte ist</h2>
+      <p class="content-text">
+        Österreich ist zu rund <strong>62 Prozent von den Alpen bedeckt</strong> – und genau
+        das macht es zu einem der besten Länder Europas für wirklich abgelegene Spots. Während
+        die Täler dicht besiedelt sind, bleiben die Hochlagen zwischen den Tälern weitgehend
+        strassenfrei. Besonders die Gebiete entlang des Alpenhauptkamms in Tirol, Salzburg
+        und Kärnten haben Zonen, die <strong>über 8 Kilometer von der nächsten Strasse</strong>
+        entfernt liegen.
       </p>
-      <p class="info-text">
-        OffGrid-Orte hilft dir, die <strong>abgelegensten Punkte</strong> zu finden – ideal für Fotografen, 
-        die unberührte Landschaften suchen, oder für Bergsteiger, die legale Biwakplätze in der Nähe von Schutzhütten erkunden.
+      <p class="content-text">
+        Anders als in der Schweiz, wo die Seitentäler oft durch Passstrassen erschlossen sind,
+        gibt es in Österreich lange durchgehende Gebirgskämme ohne Strassenquerung. Unser
+        Algorithmus findet genau diese Punkte – die <strong>maximale Distanz zu jeder
+        kartierten Strasse</strong>, gefiltert nach Waldbedeckung und Gewässernähe.
       </p>
 
       <div class="highlights">
         <div class="highlight">
-          <div class="highlight-icon">⛰️</div>
-          <div class="highlight-title">Hohe Tauern</div>
-          <div class="highlight-desc">Österreichs grösster Nationalpark mit Grossglockner und unzähligen Gletschern.</div>
-        </div>
-        <div class="highlight">
-          <div class="highlight-icon">🦌</div>
-          <div class="highlight-title">Tiroler Alpen</div>
-          <div class="highlight-desc">Raue Gipfel, einsame Täler und legendäre Weitwanderwege.</div>
+          <div class="highlight-icon">🏔️</div>
+          <div class="highlight-title">Alpenhauptkamm</div>
+          <div class="highlight-desc">Der durchgehende Hauptkamm von Vorarlberg bis zur Steiermark bietet die längsten strassenlosen Abschnitte Österreichs.</div>
         </div>
         <div class="highlight">
           <div class="highlight-icon">🌲</div>
-          <div class="highlight-title">Steirische Wälder</div>
-          <div class="highlight-desc">Dichte Wälder und sanfte Hügel im grünen Herzen Österreichs.</div>
+          <div class="highlight-title">Waldzone 1500–2000m</div>
+          <div class="highlight-desc">Dichte Fichtenwälder in mittleren Lagen bieten Sichtschutz und windgeschützte Biwakplätze. Nutze den Waldfilter.</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon">💧</div>
+          <div class="highlight-title">Gletscherbäche</div>
+          <div class="highlight-desc">Österreichs Alpen sind reich an Bächen und Quellen – der Gewässerfilter zeigt dir Spots mit Wasserzugang.</div>
         </div>
       </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Die abgelegensten Regionen Österreichs</h2>
+      <p class="content-text">
+        Nicht jedes Bundesland liefert gleich gute Ergebnisse. Hier sind die Regionen mit
+        den höchsten Abgelegenheits-Werten in unserem Tool.
+      </p>
+
+      <div class="region-cards">
+        <div class="region-detail-card">
+          <div class="region-detail-title">Ötztaler Alpen (Tirol)</div>
+          <div class="region-detail-text">
+            Das grösste zusammenhängende Gletschergebiet Österreichs. Rund um die Wildspitze
+            (3768 m) und das Venter Tal liegen einige der entferntesten Punkte von Strassen
+            im ganzen Land. Die Ötztaler Alpen grenzen an die Schweizer und italienische
+            Grenze – hier ist echte Hochgebirgswildnis. Viele SAC- und DAV-Hütten bieten
+            Stützpunkte für mehrtägige Touren.
+          </div>
+          <span class="region-detail-coord mono">Suche: 20 km Radius um 46.85°N, 10.85°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Hohe Tauern (Salzburg/Kärnten/Tirol)</div>
+          <div class="region-detail-text">
+            Der grösste Nationalpark der Alpen erstreckt sich über drei Bundesländer.
+            Das Gebiet um den Grossglockner, die Venedigergruppe und das Dorfertal ist
+            extrem weitläufig und strassenfrei. Hier gelten besondere Regeln: innerhalb
+            der Kernzone ist das Biwakieren nur im Not-Biwak erlaubt, in der Aussenzone
+            hingegen grundsätzlich möglich. Einer der besten Suchbereiche in ganz Österreich.
+          </div>
+          <span class="region-detail-coord mono">Suche: 25 km Radius um 47.1°N, 12.4°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Stubaier Alpen (Tirol)</div>
+          <div class="region-detail-text">
+            Direkt südlich von Innsbruck, aber überraschend wild: das Stubai und das
+            angrenzende Sellrain bieten steile, wenig besuchte Seitentäler. Weniger
+            touristisch als die Ötztaler Alpen, mit guten Biwak-Möglichkeiten auf
+            Hochebenen über 2500 m. Das Gebiet zwischen Stubaier Wildspitze und
+            Brennergrenze ist fast durchgehend strassenfrei.
+          </div>
+          <span class="region-detail-coord mono">Suche: 15 km Radius um 47.0°N, 11.3°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Silvretta & Verwall (Vorarlberg/Tirol)</div>
+          <div class="region-detail-text">
+            Im äussersten Westen Österreichs, angrenzend an die Schweiz, liegt die
+            Silvrettagruppe mit ihren Gletschern und kargen Hochflächen. Weniger bekannt
+            als Tirol, aber mit exzellenten Abgelegenheits-Werten. Die Verwallgruppe
+            nördlich davon ist dichter bewaldet und eignet sich gut für geschützte
+            Biwakplätze.
+          </div>
+          <span class="region-detail-coord mono">Suche: 15 km Radius um 46.9°N, 10.1°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Karnische Alpen (Kärnten/Osttirol)</div>
+          <div class="region-detail-text">
+            Die Karnischen Alpen entlang der italienischen Grenze sind ein Geheimtipp:
+            weniger Tourismus als Nordtirol, wildere Vegetation und lange Kammwanderungen
+            ohne Strassenkontakt. Der Karnische Höhenweg verläuft teilweise durch Gebiete,
+            die unser Tool als besonders abgelegen einstuft.
+          </div>
+          <span class="region-detail-coord mono">Suche: 15 km Radius um 46.6°N, 12.8°E</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Wildcampen und Biwakieren – die Rechtslage</h2>
+      <p class="content-text">
+        In Österreich ist die Gesetzgebung zum Wildcampen <strong>Ländersache</strong> –
+        jedes der neun Bundesländer hat eigene Regeln. Grundsätzlich ist Wildcampen
+        (Übernachten im Zelt) in den meisten Bundesländern auf Privatland ohne
+        Grundstückeigentümer-Erlaubnis verboten. Das <strong>Biwakieren ohne Zelt</strong>
+        (Schlafsack, Biwaksack, unter Tarp) in alpinem Gelände wird aber in der Praxis
+        weitgehend toleriert.
+      </p>
 
       <div class="legal-note">
-        <div class="legal-note-title">📋 Rechtliche Hinweise</div>
+        <div class="legal-note-title">📋 Was du wissen musst</div>
         <div class="legal-note-text">
-          Wildcampen ist in Österreich grundsätzlich verboten. Ein kurzes Notbiwak (ohne Zelt, eine Nacht) wird 
-          in alpinen Regionen oft toleriert. In Nationalparks und Schutzgebieten gelten strenge Regeln. 
-          Informiere dich vor deiner Tour beim jeweiligen Bundesland oder Tourismusverband.
+          <strong>Tirol:</strong> Das Tiroler Campinggesetz verbietet Zelten ausserhalb
+          von Campingplätzen. Biwakieren (ohne Zelt) oberhalb der Waldgrenze ist nicht
+          explizit verboten und wird toleriert. Für eine einzelne Nacht im alpinen Gelände
+          gibt es in der Praxis keine Probleme.
+        </div>
+        <div class="legal-note-text">
+          <strong>Salzburg:</strong> Ähnlich wie Tirol – Zelten verboten, alpines
+          Biwakieren geduldet. Der Nationalpark Hohe Tauern hat eine Sonderregelung:
+          in der Kernzone nur Not-Biwak, in der Aussenzone einzelne Übernachtungen möglich.
+        </div>
+        <div class="legal-note-text">
+          <strong>Kärnten:</strong> Zelten auf Privatland verboten. Biwakieren über der
+          Baumgrenze wird toleriert. Im Nationalpark Hohe Tauern gelten die
+          Nationalparkregeln.
+        </div>
+        <div class="legal-note-text">
+          <strong>Vorarlberg, Steiermark, Oberösterreich:</strong> Zelten grundsätzlich
+          verboten. Alpines Biwakieren in der Praxis geduldet, solange es sich um eine
+          einzelne Nacht handelt und kein Schaden entsteht.
+        </div>
+        <div class="legal-note-text">
+          <strong>Not-Biwak</strong> – eine ungeplante Übernachtung aus Sicherheitsgründen –
+          ist in ganz Österreich immer erlaubt. Informiere dich vor jeder Tour über lokale
+          Regelungen und Schutzgebiete.
         </div>
       </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Off-Grid-Planung in Österreich</h2>
+      <p class="content-text">
+        Die österreichischen Alpen bieten eine einzigartige Kombination für Off-Grid-Planung:
+        <strong>ausgedehnte strassenfreie Gebiete</strong>, zuverlässige Wasserversorgung
+        durch Gletscherbäche und Quellen, und ein dichtes Netz an Schutzhütten als
+        Rückfalloption. Anders als in Skandinavien ist das Gelände aber steil und anspruchsvoll –
+        eine sorgfältige Routenplanung ist essentiell.
+      </p>
+      <p class="content-text">
+        Nutze unser Tool, um die Suche <strong>datenbasiert</strong> anzugehen: statt Karten
+        manuell zu studieren, berechnet der Algorithmus die exakten Koordinaten mit maximaler
+        Strassendistanz. Kombiniere mit dem <strong>Wald- und Wasserfilter</strong> für
+        Standorte, die Schutz, Wasser und Abgeschiedenheit vereinen.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">So findest du abgelegene Orte in Österreich</h2>
+      <div class="steps-list">
+        <div class="step-item"><strong>App öffnen</strong> und auf Österreich zoomen</div>
+        <div class="step-item"><strong>Zielgebiet anklicken</strong> – z.B. Ötztaler Alpen, Hohe Tauern oder Stubaier Alpen</div>
+        <div class="step-item"><strong>Radius setzen</strong> – 15–25 km für die grossen Gebirgszüge, 10 km für einzelne Täler</div>
+        <div class="step-item"><strong>Filter nutzen</strong> – Waldbedeckung für geschützte Plätze, Gewässernähe für Wasserversorgung</div>
+        <div class="step-item"><strong>Als GPX exportieren</strong> und die Koordinaten auf dein GPS-Gerät laden</div>
+      </div>
+      <p class="content-text">
+        Der <strong>Pro-Plan</strong> (einmalig 5 €) ermöglicht den grösseren 50-km-Radius –
+        damit deckst du ganze Gebirgszüge wie die Ötztaler Alpen oder Hohen Tauern in einer
+        einzigen Suche ab.
+      </p>
+    </section>
+
+    <section class="cta-section">
+      <h2 class="content-title serif">Bereit für Österreich?</h2>
+      <p class="content-text">
+        Finde die abgelegensten Spots in den österreichischen Alpen.
+        Kostenlos nutzbar, keine Anmeldung nötig.
+      </p>
+      <a href="https://app.offgrid-orte.de?lat=47.1&lng=13.3&zoom=5&utm_source=region&utm_medium=oesterreich" class="btn-primary">
+        Österreich erkunden →
+      </a>
     </section>
 
     <section class="other-regions">
@@ -170,6 +343,9 @@
         <a href="/schweiz" class="region-link">🇨🇭 Schweiz</a>
         <a href="/bayern" class="region-link">🇩🇪 Bayern</a>
         <a href="/baden-wuerttemberg" class="region-link">🇩🇪 Baden-Württemberg</a>
+        <a href="/hessen" class="region-link">🇩🇪 Hessen</a>
+        <a href="/sachsen" class="region-link">🇩🇪 Sachsen</a>
+        <a href="/thueringen" class="region-link">🇩🇪 Thüringen</a>
         <a href="/liechtenstein" class="region-link">🇱🇮 Liechtenstein</a>
       </div>
     </section>
@@ -180,11 +356,11 @@
         <a href="mailto:support@offgrid-orte.de">Kontakt</a>
         <a href="/datenschutz">Datenschutz</a>
         <a href="/agb">AGB</a>
+        <a href="/widerruf">Widerruf</a>
       </div>
       <div class="footer-copy">© 2026 OffGrid-Orte</div>
     </footer>
   </div>
-
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

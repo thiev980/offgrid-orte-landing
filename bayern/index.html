@@ -3,157 +3,323 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary SEO -->
-  <title>Abgelegene Orte in Bayern finden – Wildcampen & Naturerlebnis</title>
-  <meta name="description" content="Finde die abgelegensten Orte in Bayern. Perfekt für Naturliebhaber, Fotografen und Off-Grid-Abenteuer in den Bayerischen Alpen, im Bayerischen Wald und Franken.">
-  <meta name="keywords" content="wildcampen bayern, abgelegene orte bayern, bayerische alpen, bayerischer wald, off-grid bayern, naturcamping bayern, biwak bayern">
-  
-  <!-- Canonical -->
-  <link rel="canonical" href="https://offgrid-orte.de/bayern">
-  
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://offgrid-orte.de/bayern">
-  <meta property="og:title" content="Abgelegene Orte in Bayern finden">
-  <meta property="og:description" content="Finde die abgelegensten Orte in Bayern. GPS-Koordinaten für Naturerlebnisse und Off-Grid-Abenteuer.">
-  <meta property="og:image" content="https://offgrid-orte.de/images/og-bayern.png">
-  <meta property="og:locale" content="de_DE">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
 
-  <!-- Fonts -->
+  <title>Abgelegene Orte in Bayern finden – Wildcampen, Biwak & Off-Grid Spots</title>
+  <meta name="description" content="Finde die abgelegensten Orte in Bayern. Bayerische Alpen, Bayerischer Wald, Allgäu, Berchtesgadener Land und Frankenwald – GPS-Koordinaten für Biwakplätze und Off-Grid-Abenteuer.">
+  <meta name="keywords" content="wildcampen bayern, biwakieren bayern, abgelegene orte bayern, bayerische alpen wildcampen, off-grid bayern, bayerischer wald wildcampen, allgäu biwak, wildcampen regeln bayern, GPS koordinaten abgelegen">
+
+  <link rel="canonical" href="https://offgrid-orte.de/bayern">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://offgrid-orte.de/bayern">
+  <meta property="og:title" content="Abgelegene Orte in Bayern – Wildcampen, Biwak & Off-Grid">
+  <meta property="og:description" content="Finde die abgelegensten Orte in Bayern. GPS-Koordinaten für Biwakplätze und Off-Grid-Abenteuer in den Bayerischen Alpen und im Bayerischen Wald.">
+  <meta property="og:image" content="https://offgrid-orte.de/images/og-bayern.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="OffGrid-Orte">
+  <meta property="og:locale" content="de_DE">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abgelegene Orte in Bayern – Wildcampen & Biwak">
+  <meta name="twitter:image" content="https://offgrid-orte.de/images/og-bayern.png">
+
+  <meta name="geo.region" content="DE-BY">
+  <meta name="geo.placename" content="Bayern">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
-      --bg-deep: #111610;
-      --bg-forest: #181d14;
-      --bg-card: #1e2418;
-      --bg-card-hover: #252c1e;
-      --text-cream: #e8e2d0;
-      --text-sand: #c4bfac;
-      --text-muted: #8a8270;
-      --text-dim: #5e5a4d;
-      --moss: #6b8f5a;
-      --moss-soft: #5a7a4c;
-      --border: rgba(200, 190, 170, 0.08);
-      --border-light: rgba(200, 190, 170, 0.14);
+      --bg-deep: #111610; --bg-forest: #181d14; --bg-card: #1e2418; --bg-card-hover: #252c1e;
+      --text-cream: #e8e2d0; --text-sand: #c4bfac; --text-muted: #8a8270; --text-dim: #5e5a4d;
+      --moss: #6b8f5a; --moss-soft: #5a7a4c; --moss-bg: rgba(107, 143, 90, 0.12);
+      --border: rgba(200, 190, 170, 0.08); --border-light: rgba(200, 190, 170, 0.14);
     }
-
-    body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--bg-deep); color: var(--text-cream); -webkit-font-smoothing: antialiased; }
+    body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; background: var(--bg-deep); color: var(--text-cream); -webkit-font-smoothing: antialiased; }
     .serif { font-family: 'DM Serif Display', Georgia, serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
     a { color: inherit; text-decoration: none; }
     .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
-
     .nav { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
     .nav-brand { font-size: 0.75rem; font-weight: 500; letter-spacing: 2px; color: var(--text-sand); text-transform: uppercase; }
     .nav-back { font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s; }
     .nav-back:hover { color: var(--text-cream); }
-
     .hero { padding: 4rem 0 3rem; text-align: center; }
     .hero-flag { font-size: 4rem; margin-bottom: 1.5rem; }
     .hero-title { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; margin-bottom: 1rem; }
     .hero-subtitle { font-size: 1.1rem; color: var(--text-muted); line-height: 1.7; max-width: 600px; margin: 0 auto 2rem; }
-
     .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--moss); color: var(--text-cream); font-family: inherit; font-size: 1rem; font-weight: 500; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s, transform 0.15s; }
     .btn-primary:hover { background: var(--moss-soft); transform: translateY(-2px); }
     .btn-primary svg { width: 20px; height: 20px; }
-
-    .info-section { padding: 3rem 0; border-top: 1px solid var(--border); }
-    .info-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
-    .info-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
-    .info-text strong { color: var(--text-sand); font-weight: 500; }
-
+    .content-section { padding: 3rem 0; border-top: 1px solid var(--border); }
+    .content-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .content-text { font-size: 1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .content-text strong { color: var(--text-sand); font-weight: 500; }
+    .region-cards { display: flex; flex-direction: column; gap: 1rem; margin: 2rem 0; }
+    .region-detail-card { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.3s; }
+    .region-detail-card:hover { border-color: var(--border-light); }
+    .region-detail-title { font-size: 1.05rem; font-weight: 500; color: var(--moss); margin-bottom: 0.5rem; }
+    .region-detail-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .region-detail-coord { display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; letter-spacing: 0.5px; color: var(--text-dim); background: rgba(107, 143, 90, 0.08); padding: 0.2rem 0.6rem; border-radius: 3px; }
     .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
     .highlight { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
     .highlight-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
     .highlight-title { font-size: 1rem; font-weight: 500; margin-bottom: 0.5rem; }
     .highlight-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
-
     .legal-note { padding: 1.5rem; background: rgba(107, 143, 90, 0.1); border: 1px solid rgba(107, 143, 90, 0.2); border-radius: 8px; margin: 2rem 0; }
-    .legal-note-title { font-size: 0.9rem; font-weight: 500; color: var(--moss); margin-bottom: 0.5rem; }
-    .legal-note-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
-
+    .legal-note-title { font-size: 0.9rem; font-weight: 500; color: var(--moss); margin-bottom: 0.75rem; }
+    .legal-note-text { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.75rem; }
+    .legal-note-text:last-child { margin-bottom: 0; }
+    .steps-list { counter-reset: step; display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+    .step-item { counter-increment: step; display: flex; gap: 0.75rem; align-items: baseline; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+    .step-item::before { content: counter(step) "."; color: var(--moss); font-weight: 500; flex-shrink: 0; }
+    .step-item strong { color: var(--text-sand); font-weight: 500; }
+    .cta-section { padding: 3rem 0; text-align: center; border-top: 1px solid var(--border); }
+    .cta-section .content-title { margin-bottom: 0.75rem; }
+    .cta-section .content-text { max-width: 500px; margin: 0 auto 2rem; text-align: center; }
     .other-regions { padding: 3rem 0; border-top: 1px solid var(--border); }
     .other-regions-title { font-size: 1rem; color: var(--text-dim); margin-bottom: 1rem; }
     .region-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
     .region-link { padding: 0.5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; color: var(--text-sand); transition: border-color 0.3s, background 0.3s; }
     .region-link:hover { border-color: var(--moss); background: var(--bg-card-hover); }
-
     .footer { padding: 2rem 0; border-top: 1px solid var(--border); text-align: center; }
     .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
     .footer-links a { font-size: 0.8rem; color: var(--text-dim); transition: color 0.3s; }
     .footer-links a:hover { color: var(--text-sand); }
     .footer-copy { font-size: 0.75rem; color: var(--text-dim); }
-
     @media (max-width: 640px) { .container { padding: 0 1.25rem; } .hero { padding: 3rem 0 2rem; } }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Abgelegene Orte in Bayern finden – Wildcampen, Biwak & Off-Grid Spots",
+    "description": "Finde die abgelegensten Orte in Bayern für Wildcampen, Biwakieren und Off-Grid-Abenteuer.",
+    "url": "https://offgrid-orte.de/bayern",
+    "datePublished": "2026-04-07",
+    "dateModified": "2026-10-08",
+    "author": { "@type": "Organization", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "publisher": { "@type": "Organization", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "isPartOf": { "@type": "WebSite", "name": "OffGrid-Orte", "url": "https://offgrid-orte.de" },
+    "about": { "@type": "Place", "name": "Bayern", "geo": { "@type": "GeoCoordinates", "latitude": 48.79, "longitude": 11.50 } }
+  }
+  </script>
 </head>
 
 <body>
   <div class="container">
+
     <nav class="nav">
       <a href="/" class="nav-brand">OffGrid-Orte</a>
       <a href="/" class="nav-back">← Alle Regionen</a>
     </nav>
 
     <section class="hero">
-      <div class="hero-flag">🇩🇪</div>
+      <div class="hero-flag">🏔️</div>
       <h1 class="hero-title serif">Abgelegene Orte in Bayern</h1>
       <p class="hero-subtitle">
-        Entdecke die einsamsten Plätze in Deutschlands grösstem Bundesland – von den Bayerischen Alpen 
-        bis zum Bayerischen Wald, von Franken bis Schwaben.
+        Von den Bayerischen Alpen bis zum Bayerischen Wald – finde die einsamsten Spots
+        in Deutschlands grösstem Bundesland. GPS-Koordinaten für Biwaktouren,
+        Landschaftsfotografie und Off-Grid-Erlebnisse.
       </p>
-      <a href="https://app.offgrid-orte.de?lat=48.8&lng=11.5&zoom=7&utm_source=region&utm_medium=bayern" class="btn-primary">
+      <a href="https://app.offgrid-orte.de?lat=48.8&lng=11.5&zoom=5&utm_source=region&utm_medium=bayern" class="btn-primary">
         Bayern erkunden
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
     </section>
 
-    <section class="info-section">
-      <h2 class="info-title serif">Wildcampen in Bayern</h2>
-      <p class="info-text">
-        Bayern bietet eine unglaubliche landschaftliche Vielfalt – von hochalpinen Gipfeln bis zu dichten Mittelgebirgswäldern. 
-        <strong>Wildcampen ist in Deutschland grundsätzlich verboten</strong>, aber das Übernachten in der Natur 
-        für Wanderer („Lagern zum Zweck der Erholung") wird vielerorts toleriert.
+    <section class="content-section">
+      <h2 class="content-title serif">Warum Bayern für abgelegene Orte überrascht</h2>
+      <p class="content-text">
+        Bayern ist das flächenmässig grösste Bundesland Deutschlands – und es hat zwei
+        völlig unterschiedliche Wildnisgebiete: die <strong>Bayerischen Alpen</strong>
+        im Süden und den <strong>Bayerischen Wald</strong> im Osten. Zusammen bieten sie
+        die besten Ergebnisse für abgelegene Orte in ganz Deutschland.
       </p>
-      <p class="info-text">
-        Mit OffGrid-Orte findest du die <strong>abgelegensten Punkte</strong> weit weg von Strassen und Wegen – 
-        ideal für Naturfotografen, Vogelbeobachter oder einfach für Menschen, die Stille suchen.
+      <p class="content-text">
+        In den Alpen liegen die strassenlosen Gebiete naturgemäss auf den Kammlagen und in
+        den schwer zugänglichen Seitentälern. Im Bayerischen Wald – direkt an der
+        tschechischen Grenze – gibt es dagegen <strong>Urwaldgebiete</strong>, die bewusst
+        nicht erschlossen werden: der Nationalpark Bayerischer Wald ist der älteste
+        Deutschlands und lässt grosse Flächen komplett verwildern.
       </p>
 
       <div class="highlights">
         <div class="highlight">
           <div class="highlight-icon">🏔️</div>
-          <div class="highlight-title">Bayerische Alpen</div>
-          <div class="highlight-desc">Zugspitze, Watzmann und unzählige Gipfel – Deutschlands alpines Herz.</div>
+          <div class="highlight-title">Alpine Kammlagen</div>
+          <div class="highlight-desc">Die Bayerischen Alpen sind schmal, aber steil – kurze Distanzen zu Strassen, aber schwer zugängliches Gelände.</div>
         </div>
         <div class="highlight">
           <div class="highlight-icon">🌲</div>
-          <div class="highlight-title">Bayerischer Wald</div>
-          <div class="highlight-desc">Europas wilder Osten – Urwälder, Luchse und endlose Einsamkeit.</div>
+          <div class="highlight-title">Urwald im Osten</div>
+          <div class="highlight-desc">Der Bayerische Wald bietet die dichteste Waldbedeckung Deutschlands – nutze den Waldfilter für die besten Spots.</div>
         </div>
         <div class="highlight">
-          <div class="highlight-icon">🦌</div>
-          <div class="highlight-title">Fränkische Schweiz</div>
-          <div class="highlight-desc">Bizarre Felsen, dunkle Höhlen und romantische Täler.</div>
+          <div class="highlight-icon">💧</div>
+          <div class="highlight-title">Bergbäche & Seen</div>
+          <div class="highlight-desc">Zahlreiche Gebirgsbäche in den Alpen und Waldbäche im Bayerischen Wald. Gewässerfilter für optimale Standorte.</div>
         </div>
       </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Die abgelegensten Regionen Bayerns</h2>
+
+      <div class="region-cards">
+        <div class="region-detail-card">
+          <div class="region-detail-title">Bayerischer Wald / Nationalpark</div>
+          <div class="region-detail-text">
+            Der Nationalpark Bayerischer Wald und der angrenzende Nationalpark Šumava
+            (Tschechien) bilden zusammen das grösste zusammenhängende Waldgebiet
+            Mitteleuropas. Grosse Bereiche sind seit Jahrzehnten sich selbst überlassen –
+            Totholzflächen, verwilderte Wälder, kaum Wege. Unser Tool liefert hier
+            überraschend hohe Abgelegenheits-Werte für ein deutsches Mittelgebirge.
+            Beachte: Im Nationalpark ist Übernachten streng verboten.
+          </div>
+          <span class="region-detail-coord mono">Suche: 15 km Radius um 48.9°N, 13.4°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Berchtesgadener Alpen</div>
+          <div class="region-detail-text">
+            Der einzige deutsche Alpen-Nationalpark. Das Gebiet rund um den Watzmann
+            (2713 m), das Steinerne Meer und den Königssee ist wild und steil. Die
+            Kammlagen des Steinernen Meers und des Hagengebirges zählen zu den
+            abgelegensten Punkten Deutschlands. Auch hier gilt: Übernachten im
+            Nationalpark nur im Not-Biwak, ausserhalb der Kernzone wird alpines
+            Biwakieren geduldet.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 47.5°N, 12.9°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Allgäuer Alpen</div>
+          <div class="region-detail-text">
+            Im äussersten Südwesten Bayerns bieten die Allgäuer Alpen eine Mischung aus
+            Grasbergen und felsigem Hochgebirge. Das Gebiet um das Hornbachtal (Grenze
+            zu Österreich) und die Hochvogel-Region ist steil und wenig begangen.
+            Für Biwaktouren besonders attraktiv: die Grasmatten oberhalb der
+            Waldgrenze bieten komfortable Schlafplätze.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 47.3°N, 10.3°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Karwendel (Grenze zu Österreich)</div>
+          <div class="region-detail-text">
+            Das Karwendelgebirge ist das grösste Naturschutzgebiet Bayerns und erstreckt
+            sich über die österreichische Grenze. Tiefe Täler, steile Felswände und ein
+            Minimum an Erschliessung. Das Vorderriss-Gebiet und die Laliderer Wände
+            sind schwer zugänglich und entsprechend abgelegen. Auf der bayerischen Seite
+            weniger streng geregelt als im österreichischen Naturpark.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 47.4°N, 11.4°E</span>
+        </div>
+
+        <div class="region-detail-card">
+          <div class="region-detail-title">Frankenwald & Fichtelgebirge</div>
+          <div class="region-detail-text">
+            Weniger spektakulär, aber im Norden Bayerns die einsamsten Gebiete: der
+            Frankenwald an der thüringischen Grenze und das Fichtelgebirge bieten
+            dichte Nadelwälder, kaum Tourismus und überraschend wenige Strassen in den
+            Kernbereichen. Ideal für alle, die Abgeschiedenheit im Wald suchen statt
+            auf dem Gipfel.
+          </div>
+          <span class="region-detail-coord mono">Suche: 10 km Radius um 50.2°N, 11.6°E</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Wildcampen und Biwakieren – die Rechtslage</h2>
+      <p class="content-text">
+        In Deutschland ist Wildcampen grundsätzlich <strong>verboten</strong> – das
+        Bundeswaldgesetz und die Landeswaldgesetze erlauben nur das Betreten des Waldes,
+        nicht das Übernachten. Bayern ist dabei keine Ausnahme. Es gibt jedoch wichtige
+        Graubereiche.
+      </p>
 
       <div class="legal-note">
-        <div class="legal-note-title">📋 Rechtliche Hinweise</div>
+        <div class="legal-note-title">📋 Was du wissen musst</div>
         <div class="legal-note-text">
-          Wildcampen ist in Bayern wie in ganz Deutschland nicht erlaubt. Ein kurzes Rasten oder Biwakieren 
-          ohne Zelt wird jedoch oft geduldet, solange du keine Spuren hinterlässt. In Naturschutzgebieten 
-          und Nationalparks gelten strenge Betretungsverbote. Bitte respektiere die Natur.
+          <strong>Grundregel:</strong> Zelten und Übernachten im Wald ist in Bayern ohne
+          Genehmigung des Waldbesitzers verboten (Art. 13 BayWaldG). Das gilt für
+          Staatswald, Gemeindewald und Privatwald.
+        </div>
+        <div class="legal-note-text">
+          <strong>Graubereich Biwakieren:</strong> Das bayerische Waldgesetz verbietet
+          das «Lagern» im Wald. Eine einzelne Übernachtung im Biwaksack ohne Zelt in
+          alpinem Gelände (oberhalb der Waldgrenze) bewegt sich in einer rechtlichen
+          Grauzone. In der Praxis wird dies selten geahndet, solange keine Spuren
+          hinterlassen werden.
+        </div>
+        <div class="legal-note-text">
+          <strong>Nationalparks:</strong> Im Nationalpark Berchtesgaden und im
+          Nationalpark Bayerischer Wald ist Übernachten ausserhalb markierter Plätze
+          streng verboten. Bussen bis 2.500 €. Not-Biwak ist die einzige Ausnahme.
+        </div>
+        <div class="legal-note-text">
+          <strong>Trekking-Camps:</strong> Bayern hat offiziell ausgewiesene Trekking-Camps
+          im Spessart und im Frankenwald. Diese kann man online buchen und legal im
+          Wald übernachten – eine gute Option für alle, die auf Nummer sicher gehen wollen.
+        </div>
+        <div class="legal-note-text">
+          Informiere dich immer über lokale Regelungen. In Naturschutzgebieten gelten
+          zusätzliche Einschränkungen. Hinterlasse keine Spuren.
         </div>
       </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">Off-Grid-Planung in Bayern</h2>
+      <p class="content-text">
+        Bayern bietet für deutsche Verhältnisse ungewöhnlich viel Raum für
+        Off-Grid-Planung. Die Kombination aus <strong>alpinem Gelände im Süden</strong>
+        und <strong>dichten Wäldern im Osten und Norden</strong> schafft unterschiedliche
+        Szenarien: hochalpine Standorte mit weiter Sicht und Wasserzugang aus
+        Bergbächen, oder geschützte Waldlagen mit natürlicher Deckung.
+      </p>
+      <p class="content-text">
+        Unser Tool berechnet die exakten Koordinaten – <strong>statt stundenlangem
+        Kartenstudium</strong> bekommst du datenbasierte Vorschläge, die du mit dem
+        Wald- und Wasserfilter weiter verfeinern kannst.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2 class="content-title serif">So findest du abgelegene Orte in Bayern</h2>
+      <div class="steps-list">
+        <div class="step-item"><strong>App öffnen</strong> und nach Bayern navigieren</div>
+        <div class="step-item"><strong>Zielgebiet anklicken</strong> – Alpen im Süden oder Bayerischer Wald im Osten</div>
+        <div class="step-item"><strong>Radius setzen</strong> – 10–15 km für Alpengebiete, 10 km für Mittelgebirge</div>
+        <div class="step-item"><strong>Filter aktivieren</strong> – Waldbedeckung für Deckung, Gewässernähe für Wasserversorgung</div>
+        <div class="step-item"><strong>Als GPX exportieren</strong> und Spots vor Ort verifizieren</div>
+      </div>
+      <p class="content-text">
+        Mit dem <strong>Pro-Plan</strong> (einmalig 5 €) deckst du mit dem 50-km-Radius
+        ganze Regionen ab und bekommst Zugang zu den Wald- und Wasserfiltern.
+      </p>
+    </section>
+
+    <section class="cta-section">
+      <h2 class="content-title serif">Bereit für Bayern?</h2>
+      <p class="content-text">
+        Finde die abgelegensten Spots in den Bayerischen Alpen und im Bayerischen Wald.
+        Kostenlos nutzbar, keine Anmeldung nötig.
+      </p>
+      <a href="https://app.offgrid-orte.de?lat=48.8&lng=11.5&zoom=5&utm_source=region&utm_medium=bayern" class="btn-primary">
+        Bayern erkunden →
+      </a>
     </section>
 
     <section class="other-regions">
@@ -162,6 +328,9 @@
         <a href="/schweiz" class="region-link">🇨🇭 Schweiz</a>
         <a href="/oesterreich" class="region-link">🇦🇹 Österreich</a>
         <a href="/baden-wuerttemberg" class="region-link">🇩🇪 Baden-Württemberg</a>
+        <a href="/hessen" class="region-link">🇩🇪 Hessen</a>
+        <a href="/sachsen" class="region-link">🇩🇪 Sachsen</a>
+        <a href="/thueringen" class="region-link">🇩🇪 Thüringen</a>
         <a href="/liechtenstein" class="region-link">🇱🇮 Liechtenstein</a>
       </div>
     </section>
@@ -172,11 +341,11 @@
         <a href="mailto:support@offgrid-orte.de">Kontakt</a>
         <a href="/datenschutz">Datenschutz</a>
         <a href="/agb">AGB</a>
+        <a href="/widerruf">Widerruf</a>
       </div>
       <div class="footer-copy">© 2026 OffGrid-Orte</div>
     </footer>
   </div>
-
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
